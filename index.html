@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,135 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3>Matemática IV</h3>
+				</section>
+				<section>
+					<h5>Aplicaciones de los contenidos de la materia</h5>
+				</section>
+				<section>
+					<section>
+						<h3>Números Complejos</h3>
+					</section>
+					<section>
+						<h4>Representación de objetos en un plano bidimensional</h4>
+						<ul class="fragment">
+							<li>
+								Números complejos como herramientas
+							</li>
+							<li class="fragment">
+								Casos específicos
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Análisis de frecuencias</h4>
+						<ul class="fragment">
+							<li>
+								Generación de terrenos
+							</li>
+							<li class="fragment">
+								Análisis de sonido
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Conceptos Necesarios</h3>
+					</section>
+					<section>
+						<p>Un número complejo es un número de la forma $ a + bi $ donde:</p>
+						<ul>
+							<li class="fragment">
+								<p>$ a, b \in \mathbb{R} $</p>
+							</li>
+							<li class="fragment">
+								<p>$ i $ es la solución a la ecuación $ x^2 = -1 $</p>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<p>En el número $a + bi$, $a$ es la parte real y $b$ es la parte imaginaria.</p>
+					</section>
+					<section>
+						<p>
+							El sistema numérico complejo se puede definir como la extensión algebraica de los números reales
+							ordinarios mediante un número imaginario $i$. Esto significa que los números complejos
+							se pueden sumar, restar y multiplicar como polinomios en la variable $i$, con la regla
+							$i^2 = -1$ impuesta.
+						</p>
+					</section>
+					<section>
+						<p>
+							Además, los números complejos también se pueden dividir por números complejos
+							distintos de cero.
+						</p>
+					</section>
+					<section>
+						<p>
+							Geometricamente, los números complejos extienden el concepto
+							de linea numérica unidimensional a <strong>plano complejo bidimensional</strong>.
+						</p>
+					</section>
+					<section>
+						<p>En el plano complejo, el número $a + bi$ puede representarse como el punto $(a, b)$ de la siguiente forma:</p>
+						<a href="#" class="navigate-down">
+							<img
+								alt="Down arrow"
+								data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+								style="border: none;"
+								width="178"
+								height="238"
+							>
+						</a>
+					</section>
+					<section>
+						<h3>Plano Complejo</h3>
+						<img src="images/complex_plane.jpg" alt="">
+					</section>
+					<section>
+
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Representación de objetos</h2>
+						<h6>Traslaciones y Rotaciones</h6>
+					</section>
+					<section>
+						<p>
+							Como se menciona anteriormente, los números complejos forman
+							en <strong><em>Cuerpo</em></strong>, por lo que dos números complejos
+							$a$ y $b$ pueden sumarse y multiplicarse.
+						</p>
+					</section>
+					<section>
+						Geometricamente hablando, los números complejos se suman como
+						vectores euclideos. La multiplicación de dos números complejos
+						se puede expresar más fácilmente en coordenadas polares:
+
+						<blockquote>
+							\[
+								a = (\theta_{1}, r_{1}), b = (\theta_{2}, r_{2}) \in \mathbb{C} \\ \\
+								ab = r_{1}r_{2} e^{i(\theta_{1} + \theta_{2})} = (\theta_{1} + \theta_{2}, r_{1}r_{2})
+							\]
+						</blockquote>
+					</section>
+					<section>
+						Luego, si $r_2 = 1$ entonces la multiplicación funciona como rotación.
+					</section>
+					<section>
+					</section>
+				</section>
+				<section>
+					<section>
+						Ejemplos
+					</section>
+					<section>
+
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -37,11 +164,28 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						callback: function() {
+							hljs.initHighlightingOnLoad();
+						}
+					},
+
+					{ src: 'lib/js/classList.js' },
+					{ src: 'plugin/math/math.js', async: true }
 				]
 			});
 		</script>
