@@ -1,5 +1,5 @@
 class Pendulum {
-        PVector location;      // Location of bob
+        PVector location;      // Location of object
         PVector origin;        // Location of arm origin
         float r;               // Length of arm
         float angle;           // Pendulum arm angle
@@ -27,7 +27,9 @@ class Pendulum {
         }
 
         void update() {
+                // It is not necessarily 9.8
                 float gravity = 0.4;
+
                 // Formula we worked out for angular acceleration
                 aAcceleration = (-1 * gravity / r) * sin(angle);
 
@@ -40,16 +42,18 @@ class Pendulum {
         }
 
         void display() {
-                // Where is the bob relative to the origin?
+                // Where is the object relative to the origin?
                 // Polar to Cartesian coordinates will tell us!
                 location.set(r*sin(angle), r*cos(angle), 0);
                 location.add(origin);
 
                 stroke(0);
+
                 // The arm
                 line(origin.x,origin.y, location.x, location.y);
                 fill(175);
-                // The bob
+
+                // The object
                 ellipse(location.x, location.y, 16, 16);
         }
 }
