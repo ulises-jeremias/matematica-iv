@@ -8,7 +8,7 @@ En este repositorio se encuentran los materiales utilizados durante la clase de 
 
 ```bash
 $ git clone https://github.com/ulises-jeremias/matematica-iv.git
-$ cd clase-de-aplicaciones
+$ cd matematica-iv
 $ yarn
 $ yarn start
 ```
