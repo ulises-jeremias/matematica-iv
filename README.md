@@ -7,7 +7,7 @@ En este repositorio se encuentran los materiales utilizados durante la clase de 
 ### Preparar el ambiente de desarrollo
 
 ```bash
-$ git clone https://github.com/ulises-jeremias/clase-de-aplicaciones.git
+$ git clone https://github.com/ulises-jeremias/matematica-iv.git
 $ cd clase-de-aplicaciones
 $ yarn
 $ yarn start
