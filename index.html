@@ -130,7 +130,7 @@
 					</section>
 					<section>
 						Geometricamente hablando, los números complejos se suman como
-						vectores euclideos. La multiplicación de dos números complejos
+						<em>vectores euclideos</em>. La multiplicación de dos números complejos
 						se puede expresar más fácilmente en coordenadas polares:
 					</section>
 					<section>
@@ -191,8 +191,8 @@
 					</section>
 					<section>
 						En un caso ideal, la posición en el eje real se comporta como
-						una función seno, y sabemos de Matemática II que la razón de cambio
-						de la función está dada por la función coseno.
+						una función <em>coseno</em>, y sabemos de Matemática II que la razón de cambio
+						de la función está dada por la función <em>seno</em>.
 					</section>
 					<section>
 						Pero, <strong>¿a qué llamamos caso ideal?</strong>
@@ -209,13 +209,13 @@
 						<img width="526px" src="images/damped_oscillation.jpg" alt="">
 					</section>
 					<section>
-						Para esto buscamos la forma de atenuar la función seno que ya tenemos
+						Para esto buscamos la forma de atenuar la función coseno que ya tenemos
 						y vemos una forma de indicar cual será la amplitud inicial de la misma.
 					</section>
 					<section>
 						<h3>Amplitud</h3>
 						<p>
-							Para definir la amplitud inicial de la función seno simplemente
+							Para definir la amplitud inicial de la función <em>coseno</em> simplemente
 							multiplicamos la posición del objeto por un número que
 							signifique la amplitud inicial del resorte, $A$.
 						</p>
@@ -223,7 +223,7 @@
 					<section>
 						<h3>Periodo</h3>
 						<p>
-							Sabemos que la función $sin$ recibe la variable $t$ como argumento
+							Sabemos que la función $cos$ recibe la variable $t$ como argumento
 							en cada iteración. Luego, podemos evaluar como afectaría
 							a la posición del objeto multiplicar ese tiempo $t$ por
 							un valor real $\omega$.
@@ -233,12 +233,12 @@
 						<h3>Fase</h3>
 						<p>
 							Finalmente, determinamos cuan corrido está el dibujo de la función
-							seno en base a la fase $\phi$.
+							<em>coseno</em> en base a la fase $\phi$.
 						</p>
 					</section>
 					<section>
 						Se puede ver como los conceptos mencionados anteriormente
-						afectan a la gráfica de una función seno en el siguiente
+						afectan a la gráfica de una función $sin$ en el siguiente
 						<a href="https://www.geogebra.org/m/KfUX66de" target="_blank">
 							enlace
 						</a>.
@@ -250,19 +250,33 @@
 							forma:
 						</p>
 						<ul>
-							<li>$y(t) = Asin(\omega t + \phi)$</li>
 							<li>$x(t) = Acos(\omega t + \phi)$</li>
+							<li>$y(t) = Asin(\omega t + \phi)$</li>
 						</ul>
 					</section>
 					<section>
 						<p>
-							De esto sabemos a su vez que, si derivamos $x(t)$ ó $y(t)$ respecto de $t$,
+							Particularmente, si tomamos la amplitud $A$ como la distancia de la caja al centro del plano
+							es decir, el módulo de la posición, y sea $\theta = \omega t + \phi$,
+							el argumento de la posición a lo largo del tiempo, tenemos la
+							posición en forma trinométrica,
+						</p>
+
+						<p>
+							\[
+								r(t) = A (cos(\theta) + i sin(\theta))
+							\]
+						</p>
+					</section>
+					<section>
+						<p>
+							Sabemos a su vez que, si derivamos $x(t)$ ó $y(t)$ respecto de $t$,
 							obtenemos la velocidad a la que se mueve el objeto,
 							quedando la siguiente función de velocidad para cada uno respectivamente:
 						</p>
 						<ul>
-							<li>$v_{y}(t) = A \omega cos(\omega t + \phi)$</li>
 							<li>$v_{x}(t) = -A \omega sin(\omega t + \phi)$</li>
+							<li>$v_{y}(t) = A \omega cos(\omega t + \phi)$</li>
 						</ul>
 					</section>
 				</section>
@@ -281,6 +295,18 @@
 					</section>
 					<section>
 						...pero se espera ir profundizando a medida que transcurre la materia.
+					</section>
+					<section>
+						El código de los ejemplos que se plantean a continuación se puede
+						encontrar en el siguiente
+						<a href="https://github.com/ulises-jeremias/frequency-analysis-with-FFT" target="_blank">
+							repositorio
+						</a>
+						de github.
+					</section>
+					<section>
+						En dicho repositorio se puede encontrar una breve descripción de cada uno
+						de los proyectos, objetivos de los mismos y formas de utilización.
 					</section>
 				</section>
 				<section>
@@ -303,19 +329,29 @@
 						<h2>Análisis de audios</h2>
 					</section>
 					<section>
-						<p>
-							Señales complejas y Fourier
-						</p>
+						En el repositorio de Análisis de Frecuencias se puede ver un proyecto
+						en python, el cual permite observar como se representa graficamente
+						una onda de audio recibida por micrófono y se compara su gráfica
+						con el espectro de la misma.
+					</section>
+					<section>
+						Se utiliza <strong>scipy.fftpack</strong> para computar la <em>FFT</em>
+						y mostrar el espectro del audio en tiempo real utilizando algunas
+						herramientas del lenguaje <em>python</em>.
+					</section>
+					<section>
+						Además se muestra un curioso
 						<a href="https://github.com/CFSworks/wavebird-reversing/blob/master/03_complex_signals_and_fourier/synthesize.py" target="_blank">
 							ejemplo
 						</a>
+						de como se utilizan	señales complejas y la Transformada de Fourier para generar
+						un archivo de audio a partir de una lista de números complejos
+						representados en forma polar.
 					</section>
 				</section>
 				<section>
 					<section>
 						<h2>Links de interes</h2>
-					</section>
-					<section>
 						<ul>
 							<li>
 								<a href="https://github.com/ulises-jeremias/matematica-iv" target="_blank">
@@ -325,6 +361,11 @@
 							<li>
 								<a href="https://github.com/ulises-jeremias/frequency-analysis-with-FFT" target="_blank">
 									Frecuency Analysis with FFT
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/CFSworks/wavebird-reversing" target="_blank">
+									Reverse-engineering Nintendo's WaveBird wireless controller
 								</a>
 							</li>
 						</ul>
