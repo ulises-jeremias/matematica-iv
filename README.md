@@ -20,3 +20,7 @@ En la clase dictada el día 7 de septiembre de 2018 se muestran áreas de aplica
 A lo largo de la presentación se hace énfasis en los conceptos de amplitud, frecuencia y fase de una función trigonométrica para comprender así las distintas formas de representación de un número complejo y como es que los mismos se relacionan con las aplicaciones mencionadas.
 
 Se puede ver el código de los ejemplos planteados en el directorio `examples` de este repositorio o en el siguiente [repositorio de github](https://github.com/ulises-jeremias/frequency-analysis-with-FFT).
+
+### Contenidos
+
+Puede encontrarse un resumen de los contenidos dictados en la clase en el siguiente [archivo](./docs/PRIMER_CLASE.md).
