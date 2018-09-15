@@ -10,13 +10,13 @@ Se puede ver el código de los ejemplos planteados en el directorio `examples` d
 
 ## Resumen de la clase
 
-Como se menciona anteriormente, los contenidos de la clase son aplicaciones de los Números Complejos.
+Como se menciona anteriormente, el contenido de la clase es aplicaciones de los Números Complejos.
 
 Hablar de aplicaciones de los números complejos es algo dificil debido a que están presentes en muchisimas cosas, más de las que podemos imaginar y preguntarnos para que los utilizamos es equivalente a preguntarnos ¿para qué sirven los números naturales?, ¿para qué utilizamos números reales?. La respuesta a estas preguntas es simple.
 
 Los números naturales los utilizamos para contar, es decir que todo problema que se plantee en el dominio del conteo se va a relacionar con este conjunto de números.
 
-Por otro lado, los números reales surgen como una necesidad para poder representar nuevas cantidades. Para la época en la que surgen estos números ya se tenían en cuenta los racionales, números los cuales se sabía que los egipcios utilizaban para la resolución de problemas prácticos, sin embargo, fue con el desarrollo de la matemática griega cuando se consideró el aspecto filosófico de *número*. Los pitagóricos descubrieron que las relaciones armónicas entre las notas musicales correspondían a cocientes de números enteros, lo que les inspiró a buscar proporciones numéricas en todas las demás cosas, y lo expresaron con la máxima **todo es número**. Posteriormente, se obtiene que no toda cantidad es un número racional y es ahí cuando surge la necesidad de definir una nueva forma de representar las cantidades, y nuevamente, como una necesidad se definen los números reales.
+Por otro lado, los números reales surgen como una necesidad para poder representar nuevas cantidades. Para la época en la que surgen estos números ya se tenían en cuenta los racionales, números los cuales se sabía que los egipcios utilizaban para la resolución de problemas prácticos, sin embargo, fue con el desarrollo de la matemática griega cuando se consideró el aspecto filosófico de _número_. Los pitagóricos descubrieron que las relaciones armónicas entre las notas musicales correspondían a cocientes de números enteros, lo que les inspiró a buscar proporciones numéricas en todas las demás cosas, y lo expresaron con la máxima **todo es número**. Posteriormente, se obtiene que no toda cantidad es un número racional y es ahí cuando surge la necesidad de definir una nueva forma de representar las cantidades, y nuevamente, como una necesidad se definen los números reales.
 
 De todo esto, podemos ver que los números surgen a lo largo de la historia como una necesidad para representar cantidades y aspectos del mundo físico y los números complejos no son una excepción. Surgen como una necesidad para resolver la busqueda de raices de determinados polinomios de grado 2 y 3. Por nuestra parte, vamos a evaluar como es que nos sirven los números complejos y como es que nos sirve entender cada uno de los conceptos detras de los mismos.
 
@@ -28,7 +28,7 @@ Para resumir las aplicaciones existente vamos a separar las mismas en dos catego
 
 ### Representación de objetos en el plano bidimensional
 
-Este es el aspecto de los números complejos en el que pienso primero si tengo que nombrar aplicaciones de los mismos. Como se sabe, los números complejos no solo extienden el conjunto de los números reales desde un punto de vista algebraico, sino tambien desde un punto geometrico. El plano complejo es una extensión de la linea numérica unidimensional en el cual se añade un eje, el *eje imaginario*, el cual permite representar punto en un plano bidimensional. Estos puntos son números complejos.
+Este es el aspecto de los números complejos es el que pienso primero si tengo que nombrar aplicaciones de los mismos. Como se sabe, los números complejos no solo extienden el conjunto de los números reales desde un punto de vista algebraico, sino tambien desde un punto geometrico. El plano complejo es una extensión de la linea numérica unidimensional en el cual se añade un eje, _imaginario_, el cual permite representar puntos en un plano bidimensional. Estos puntos son números complejos.
 
 ### Análisis de Frecuencias
 
@@ -36,7 +36,7 @@ Como se menciona anteriormente, existen ejemplos en los que uno podría ignorar 
 
 Entre los ejemplos tenemos,
 
--   Generación de terrenos en un plano tri-dimensional
+-   Generación de terrenos en un plano tridimensional
 -   Análisis de Audio
 -   entre otros
 
@@ -53,9 +53,21 @@ Por otro lado, la multiplicación de dos números complejos se puede expresar m�
 
 Sean <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/ed9a41f86371c04599f858809297df9b.svg" align=middle width=214.76392409999994pt height=22.831056599999986pt/> tales que:
 
--   |<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/44bc9d542a92714cac84e01cbbb7fd61.svg" align=middle width=8.68915409999999pt height=14.15524440000002pt/>| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/442b001a242fceec20d4a8c75239b6cd.svg" align=middle width=123.25798979999998pt height=24.65753399999998pt/>
--   |<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg" align=middle width=7.054796099999991pt height=22.831056599999986pt/>| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/03b5060dca839af3223c0ec9049f5a20.svg" align=middle width=118.92452549999999pt height=24.65753399999998pt/>
+-   \|<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/44bc9d542a92714cac84e01cbbb7fd61.svg" align=middle width=8.68915409999999pt height=14.15524440000002pt/>\| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/442b001a242fceec20d4a8c75239b6cd.svg" align=middle width=123.25798979999998pt height=24.65753399999998pt/>
+-   \|<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg" align=middle width=7.054796099999991pt height=22.831056599999986pt/>\| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/03b5060dca839af3223c0ec9049f5a20.svg" align=middle width=118.92452549999999pt height=24.65753399999998pt/>
 
 Definimos el producto complejo de la siguiente forma:
 
-<p align="center"><img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/f912fa0d108eaa4945b4f2061199110d.svg" align=middle width=126.46720349999998pt height=46.2392733pt/></p>
+<p align="center"><img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/bc3d4e172cd298278202d26c4f040a5f.svg" align=middle width=126.46716225pt height=46.2392733pt/></p>
+
+Luego, si <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/2249583b4d6d09d50a0232b38db9563d.svg" align=middle width=44.15589254999999pt height=21.18721440000001pt/> entonces la multiplicación funciona como rotación.
+
+### Ejemplo Específico
+
+**Movimiento Oscilatorio**
+
+Para este ejemplo, queremos representar la posición de un objeto cuyo movimiento se muestra de la siguiente forma:
+
+![][logo]
+
+[logo]: ../images/easy_harmonic_oscillator.gif

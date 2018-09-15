@@ -10,7 +10,7 @@ Se puede ver el código de los ejemplos planteados en el directorio `examples` d
 
 ## Resumen de la clase
 
-Como se menciona anteriormente, los contenidos de la clase son aplicaciones de los Números Complejos.
+Como se menciona anteriormente, el contenido de la clase es aplicaciones de los Números Complejos.
 
 Hablar de aplicaciones de los números complejos es algo dificil debido a que están presentes en muchisimas cosas, más de las que podemos imaginar y preguntarnos para que los utilizamos es equivalente a preguntarnos ¿para qué sirven los números naturales?, ¿para qué utilizamos números reales?. La respuesta a estas preguntas es simple.
 
@@ -28,7 +28,7 @@ Para resumir las aplicaciones existente vamos a separar las mismas en dos catego
 
 ### Representación de objetos en el plano bidimensional
 
-Este es el aspecto de los números complejos en el que pienso primero si tengo que nombrar aplicaciones de los mismos. Como se sabe, los números complejos no solo extienden el conjunto de los números reales desde un punto de vista algebraico, sino tambien desde un punto geometrico. El plano complejo es una extensión de la linea numérica unidimensional en el cual se añade un eje, el *eje imaginario*, el cual permite representar punto en un plano bidimensional. Estos puntos son números complejos.
+Este es el aspecto de los números complejos es el que pienso primero si tengo que nombrar aplicaciones de los mismos. Como se sabe, los números complejos no solo extienden el conjunto de los números reales desde un punto de vista algebraico, sino tambien desde un punto geometrico. El plano complejo es una extensión de la linea numérica unidimensional en el cual se añade un eje, *imaginario*, el cual permite representar puntos en un plano bidimensional. Estos puntos son números complejos.
 
 ### Análisis de Frecuencias
 
@@ -36,7 +36,7 @@ Como se menciona anteriormente, existen ejemplos en los que uno podría ignorar 
 
 Entre los ejemplos tenemos,
 
--   Generación de terrenos en un plano tri-dimensional
+-   Generación de terrenos en un plano tridimensional
 -   Análisis de Audio
 -   entre otros
 
@@ -59,8 +59,19 @@ Sean $a = x_1 + y_{1}i, b = x_2 + y_{2}i \in \mathbb{C}$ tales que:
 Definimos el producto complejo de la siguiente forma:
 
 $$
-  \begin{aligned}
-  	ab = r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \\
-  		 = {r_{a}r_{b}}_{(\theta_a + \theta_b)}
-  \end{aligned}
+\begin{aligned}
+	ab &= r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \\
+		 &= {r_{a}r_{b}}_{(\theta_a + \theta_b)}
+\end{aligned}
 $$
+
+Luego, si $r_b = 1$ entonces la multiplicación funciona como rotación.
+
+### Ejemplo Específico
+**Movimiento Oscilatorio**
+
+Para este ejemplo, queremos representar la posición de un objeto cuyo movimiento se muestra de la siguiente forma:
+
+![][logo]
+
+[logo]: ../images/easy_harmonic_oscillator.gif
