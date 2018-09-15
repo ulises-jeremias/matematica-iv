@@ -51,16 +51,16 @@ La suma de dos números complejos puede entenderse como la traslacion de un punt
 
 Por otro lado, la multiplicación de dos números complejos se puede expresar más fácilmente en coordenadas polares:
 
-Sean <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/ed9a41f86371c04599f858809297df9b.svg?invert_in_darkmode" align=middle width=214.76392409999994pt height=22.831056599999986pt/> tales que:
+Sean <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/ed9a41f86371c04599f858809297df9b.svg" align=middle width=214.76392409999994pt height=22.831056599999986pt/> tales que:
 
--   \|<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/44bc9d542a92714cac84e01cbbb7fd61.svg?invert_in_darkmode" align=middle width=8.68915409999999pt height=14.15524440000002pt/>\| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/442b001a242fceec20d4a8c75239b6cd.svg?invert_in_darkmode" align=middle width=123.25798979999998pt height=24.65753399999998pt/>
--   \|<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode" align=middle width=7.054796099999991pt height=22.831056599999986pt/>\| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/03b5060dca839af3223c0ec9049f5a20.svg?invert_in_darkmode" align=middle width=118.92452549999999pt height=24.65753399999998pt/>
+-   \|<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/44bc9d542a92714cac84e01cbbb7fd61.svg" align=middle width=8.68915409999999pt height=14.15524440000002pt/>\| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/442b001a242fceec20d4a8c75239b6cd.svg" align=middle width=123.25798979999998pt height=24.65753399999998pt/>
+-   \|<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg" align=middle width=7.054796099999991pt height=22.831056599999986pt/>\| <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/03b5060dca839af3223c0ec9049f5a20.svg" align=middle width=118.92452549999999pt height=24.65753399999998pt/>
 
 Definimos el producto complejo de la siguiente forma:
 
-<p align="center"><img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/3ec4f8864426c6e906df2c4cc6215af9.svg?invert_in_darkmode" align=middle width=242.04861285pt height=21.5817393pt/></p>
+<p align="center"><img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/3ec4f8864426c6e906df2c4cc6215af9.svg" align=middle width=242.04861285pt height=21.5817393pt/></p>
 
-Luego, si <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/2249583b4d6d09d50a0232b38db9563d.svg?invert_in_darkmode" align=middle width=44.15589254999999pt height=21.18721440000001pt/> entonces la multiplicación funciona como rotación.
+Luego, si <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/2249583b4d6d09d50a0232b38db9563d.svg" align=middle width=44.15589254999999pt height=21.18721440000001pt/> entonces la multiplicación funciona como rotación.
 
 ### Ejemplo Específico
 
