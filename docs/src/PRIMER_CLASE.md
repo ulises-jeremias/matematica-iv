@@ -60,7 +60,7 @@ Definimos el producto complejo de la siguiente forma:
 
 $$
 	\begin{aligned}
-		ab &= r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \
+		ab &= r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \\
 			 &= {r_{a}r_{b}}_{(\theta_a + \theta_b)}
 	\end{aligned}
 $$
@@ -73,6 +73,68 @@ Luego, si $r_b = 1$ entonces la multiplicación funciona como rotación.
 
 Para este ejemplo, queremos representar la posición de un objeto cuyo movimiento se muestra de la siguiente forma:
 
-![][logo]
+![][easy_harmonic_oscillator]
 
-[logo]: ../images/easy_harmonic_oscillator.gif
+[easy_harmonic_oscillator]: ../images/easy_harmonic_oscillator.gif
+
+Podemos ver como se comporta el movimiento del objeto en el eje de los reales en la siguiente demostración gráfica.
+
+![][complex_plane_sin]
+
+[complex_plane_sin]: ../images/complex_plane_sin.gif
+
+Además, observamos en el siguiente gráfico como es el comportamiento del mismo en función de funciones trigonométricas conocidas.
+
+![][complex_plane_cos_sin]
+
+[complex_plane_cos_sin]: ../images/complex_plane_cos_sin.gif
+
+A partir de la animación anterior podemos observar los siguientes items:
+
+En un caso ideal,
+
+-		la posición en el eje real se comporta como una función *coseno*.
+-		recordando los temas vistos en matemática II, sabemos que la razón de cambio de la función *coseno* está dada por la función *seno*.
+
+Es decir, vamos a representar de alguna forma la posición como una función *coseno*, y que tan rápido cambie ese posición estará determinado por la función *seno*.
+
+Pero, **¿a qué llamamos caso ideal?**.
+
+El mundo físico no es ideal, y sabemos que la posición de un objeto cambia a medida que transcurre el tiempo. Necesitamos poder definir la posición del objeto en función del tiempo. La misma se comporta de la siguiente forma:
+
+![][damped_oscillation]
+
+[damped_oscillation]: ../images/damped_oscillation.jpg
+
+Para esto buscamos la forma de atenuar la función coseno que ya tenemos y vemos una forma de indicar cual será la amplitud inicial de la misma.
+
+#### Amplitud
+
+Para definir la amplitud inicial de la función coseno simplemente multiplicamos la posición del objeto por un número que signifique la amplitud inicial del resorte, *A*.
+
+#### Periodo
+
+Sabemos que la función cos recibe la variable $t$ como argumento en cada iteración. Luego, podemos evaluar como afectaría a la posición del objeto multiplicar ese tiempo $t$ por un valor real $\omega$.
+
+#### Fase
+
+Finalmente, determinamos cuan corrido está el dibujo de la función coseno en base a la fase $\phi$.
+
+* * *
+
+Se puede ver como los conceptos mencionados anteriormente afectan a la gráfica de una función sin en el siguiente [enlace](https://www.geogebra.org/m/KfUX66de).
+
+Juntando todas las definiciones planteadas anteriormente, resumimos la posición del objeto en función del tiempo de la siguiente forma:
+
+-		$x(t) = Acos(\omega t + \phi)$
+-		$y(t) = Asin(\omega t + \phi)$
+
+
+Particularmente, si tomamos la amplitud $A$ como la distancia de la caja al centro del plano es decir, el módulo de la posición, y sea $\theta = \omega t + \phi$, el argumento de la posición a lo largo del tiempo, tenemos la posición representada en **forma trinométrica**,
+
+$r(t) = A (cos(\theta) + i sin(\theta))$
+
+Sabemos a su vez que, si derivamos $x(t)$ ó $y(t)$ respecto de $t$, obtenemos la velocidad a la que se mueve el objeto, quedando la siguiente función de velocidad para cada uno respectivamente:
+
+-		$v_{x}(t) = -A \omega sin(\omega t + \phi)$
+-		$v_{y}(t) = A \omega cos(\omega t + \phi)$

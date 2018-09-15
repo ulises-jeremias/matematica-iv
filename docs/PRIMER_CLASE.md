@@ -58,7 +58,7 @@ Sean <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs
 
 Definimos el producto complejo de la siguiente forma:
 
-<p align="center"><img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/3ec4f8864426c6e906df2c4cc6215af9.svg" align=middle width=242.04861285pt height=21.5817393pt/></p>
+<p align="center"><img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/f07be012cb603c3dfbdf3eb5793a1ff5.svg" align=middle width=126.46716225pt height=46.2392733pt/></p>
 
 Luego, si <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/2249583b4d6d09d50a0232b38db9563d.svg" align=middle width=44.15589254999999pt height=21.18721440000001pt/> entonces la multiplicación funciona como rotación.
 
@@ -68,6 +68,68 @@ Luego, si <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master
 
 Para este ejemplo, queremos representar la posición de un objeto cuyo movimiento se muestra de la siguiente forma:
 
-![][logo]
+![][easy_harmonic_oscillator]
 
-[logo]: ../images/easy_harmonic_oscillator.gif
+[easy_harmonic_oscillator]: ../images/easy_harmonic_oscillator.gif
+
+Podemos ver como se comporta el movimiento del objeto en el eje de los reales en la siguiente demostración gráfica.
+
+![][complex_plane_sin]
+
+[complex_plane_sin]: ../images/complex_plane_sin.gif
+
+Además, observamos en el siguiente gráfico como es el comportamiento del mismo en función de funciones trigonométricas conocidas.
+
+![][complex_plane_cos_sin]
+
+[complex_plane_cos_sin]: ../images/complex_plane_cos_sin.gif
+
+A partir de la animación anterior podemos observar los siguientes items:
+
+En un caso ideal,
+
+-		la posición en el eje real se comporta como una función *coseno*.
+-		recordando los temas vistos en matemática II, sabemos que la razón de cambio de la función *coseno* está dada por la función *seno*.
+
+Es decir, vamos a representar de alguna forma la posición como una función *coseno*, y que tan rápido cambie ese posición estará determinado por la función *seno*.
+
+Pero, **¿a qué llamamos caso ideal?**.
+
+El mundo físico no es ideal, y sabemos que la posición de un objeto cambia a medida que transcurre el tiempo. Necesitamos poder definir la posición del objeto en función del tiempo. La misma se comporta de la siguiente forma:
+
+![][damped_oscillation]
+
+[damped_oscillation]: ../images/damped_oscillation.jpg
+
+Para esto buscamos la forma de atenuar la función coseno que ya tenemos y vemos una forma de indicar cual será la amplitud inicial de la misma.
+
+#### Amplitud
+
+Para definir la amplitud inicial de la función coseno simplemente multiplicamos la posición del objeto por un número que signifique la amplitud inicial del resorte, *A*.
+
+#### Periodo
+
+Sabemos que la función cos recibe la variable <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4f4f4e395762a3af4575de74c019ebb5.svg" align=middle width=5.936097749999991pt height=20.221802699999984pt/> como argumento en cada iteración. Luego, podemos evaluar como afectaría a la posición del objeto multiplicar ese tiempo <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4f4f4e395762a3af4575de74c019ebb5.svg" align=middle width=5.936097749999991pt height=20.221802699999984pt/> por un valor real <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/ae4fb5973f393577570881fc24fc2054.svg" align=middle width=10.82192594999999pt height=14.15524440000002pt/>.
+
+#### Fase
+
+Finalmente, determinamos cuan corrido está el dibujo de la función coseno en base a la fase <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/f50853d41be7d55874e952eb0d80c53e.svg" align=middle width=9.794543549999991pt height=22.831056599999986pt/>.
+
+* * *
+
+Se puede ver como los conceptos mencionados anteriormente afectan a la gráfica de una función sin en el siguiente [enlace](https://www.geogebra.org/m/KfUX66de).
+
+Juntando todas las definiciones planteadas anteriormente, resumimos la posición del objeto en función del tiempo de la siguiente forma:
+
+-		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/849dc24edccc420adbf6be999b851e1d.svg" align=middle width=144.57945479999998pt height=24.65753399999998pt/>
+-		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/bf3bc66e826bcc8648f3e2102dce8206.svg" align=middle width=144.28192019999997pt height=24.65753399999998pt/>
+
+
+Particularmente, si tomamos la amplitud <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/53d147e7f3fe6e47ee05b88b166bd3f6.svg" align=middle width=12.32879834999999pt height=22.465723500000017pt/> como la distancia de la caja al centro del plano es decir, el módulo de la posición, y sea <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/eb7c10fffd9c39df70d5c92ed11a4239.svg" align=middle width=76.73489669999998pt height=22.831056599999986pt/>, el argumento de la posición a lo largo del tiempo, tenemos la posición representada en **forma trinométrica**,
+
+<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/ec5ba7b70330c68f75052f6c82181193.svg" align=middle width=187.32160424999998pt height=24.65753399999998pt/>
+
+Sabemos a su vez que, si derivamos <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/f92a2fed82f1dacdec6e4d5a05fbbf97.svg" align=middle width=28.11651809999999pt height=24.65753399999998pt/> ó <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/d4378ba898213096600125929214f90a.svg" align=middle width=27.37073789999999pt height=24.65753399999998pt/> respecto de <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4f4f4e395762a3af4575de74c019ebb5.svg" align=middle width=5.936097749999991pt height=20.221802699999984pt/>, obtenemos la velocidad a la que se mueve el objeto, quedando la siguiente función de velocidad para cada uno respectivamente:
+
+-		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/97b3eabab0cd2666843efd89c8022148.svg" align=middle width=175.4843871pt height=24.65753399999998pt/>
+-		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/0f241985110624c2d8f15a74c9f2dbe0.svg" align=middle width=161.87594115pt height=24.65753399999998pt/>
