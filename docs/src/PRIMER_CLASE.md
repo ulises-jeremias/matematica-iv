@@ -60,7 +60,7 @@ Definimos el producto complejo de la siguiente forma:
 
 $$
   \begin{aligned}
-  	ab &amp;= r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \\
-  		 &amp;= {r_{a}r_{b}}_{(\theta_a + \theta_b)}
+  	ab = r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \\
+  		 = {r_{a}r_{b}}_{(\theta_a + \theta_b)}
   \end{aligned}
 $$
