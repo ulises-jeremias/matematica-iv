@@ -93,8 +93,8 @@ A partir de la animación anterior podemos observar los siguientes items:
 
 En un caso ideal,
 
--		la posición en el eje real se comporta como una función *coseno*.
--		recordando los temas vistos en matemática II, sabemos que la razón de cambio de la función *coseno* está dada por la función *seno*.
+-	la posición en el eje real se comporta como una función *coseno*.
+-	recordando los temas vistos en matemática II, sabemos que la razón de cambio de la función *coseno* está dada por la función *seno*.
 
 Es decir, vamos a representar de alguna forma la posición como una función *coseno*, y que tan rápido cambie ese posición estará determinado por la función *seno*.
 
@@ -126,8 +126,8 @@ Se puede ver como los conceptos mencionados anteriormente afectan a la gráfica 
 
 Juntando todas las definiciones planteadas anteriormente, resumimos la posición del objeto en función del tiempo de la siguiente forma:
 
--		$x(t) = Acos(\omega t + \phi)$
--		$y(t) = Asin(\omega t + \phi)$
+-	$x(t) = Acos(\omega t + \phi)$
+-	$y(t) = Asin(\omega t + \phi)$
 
 
 Particularmente, si tomamos la amplitud $A$ como la distancia de la caja al centro del plano es decir, el módulo de la posición, y sea $\theta = \omega t + \phi$, el argumento de la posición a lo largo del tiempo, tenemos la posición representada en **forma trinométrica**,
@@ -136,5 +136,5 @@ $r(t) = A (cos(\theta) + i sin(\theta))$
 
 Sabemos a su vez que, si derivamos $x(t)$ ó $y(t)$ respecto de $t$, obtenemos la velocidad a la que se mueve el objeto, quedando la siguiente función de velocidad para cada uno respectivamente:
 
--		$v_{x}(t) = -A \omega sin(\omega t + \phi)$
--		$v_{y}(t) = A \omega cos(\omega t + \phi)$
+-	$v_{x}(t) = -A \omega sin(\omega t + \phi)$
+-	$v_{y}(t) = A \omega cos(\omega t + \phi)$

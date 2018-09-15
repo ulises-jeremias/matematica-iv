@@ -88,8 +88,8 @@ A partir de la animación anterior podemos observar los siguientes items:
 
 En un caso ideal,
 
--		la posición en el eje real se comporta como una función *coseno*.
--		recordando los temas vistos en matemática II, sabemos que la razón de cambio de la función *coseno* está dada por la función *seno*.
+-	la posición en el eje real se comporta como una función *coseno*.
+-	recordando los temas vistos en matemática II, sabemos que la razón de cambio de la función *coseno* está dada por la función *seno*.
 
 Es decir, vamos a representar de alguna forma la posición como una función *coseno*, y que tan rápido cambie ese posición estará determinado por la función *seno*.
 
@@ -121,8 +121,8 @@ Se puede ver como los conceptos mencionados anteriormente afectan a la gráfica 
 
 Juntando todas las definiciones planteadas anteriormente, resumimos la posición del objeto en función del tiempo de la siguiente forma:
 
--		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/849dc24edccc420adbf6be999b851e1d.svg" align=middle width=144.57945479999998pt height=24.65753399999998pt/>
--		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/bf3bc66e826bcc8648f3e2102dce8206.svg" align=middle width=144.28192019999997pt height=24.65753399999998pt/>
+-	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/849dc24edccc420adbf6be999b851e1d.svg" align=middle width=144.57945479999998pt height=24.65753399999998pt/>
+-	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/bf3bc66e826bcc8648f3e2102dce8206.svg" align=middle width=144.28192019999997pt height=24.65753399999998pt/>
 
 
 Particularmente, si tomamos la amplitud <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/53d147e7f3fe6e47ee05b88b166bd3f6.svg" align=middle width=12.32879834999999pt height=22.465723500000017pt/> como la distancia de la caja al centro del plano es decir, el módulo de la posición, y sea <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/eb7c10fffd9c39df70d5c92ed11a4239.svg" align=middle width=76.73489669999998pt height=22.831056599999986pt/>, el argumento de la posición a lo largo del tiempo, tenemos la posición representada en **forma trinométrica**,
@@ -131,5 +131,5 @@ Particularmente, si tomamos la amplitud <img src="https://github.com/ulises-jere
 
 Sabemos a su vez que, si derivamos <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/f92a2fed82f1dacdec6e4d5a05fbbf97.svg" align=middle width=28.11651809999999pt height=24.65753399999998pt/> ó <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/d4378ba898213096600125929214f90a.svg" align=middle width=27.37073789999999pt height=24.65753399999998pt/> respecto de <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/4f4f4e395762a3af4575de74c019ebb5.svg" align=middle width=5.936097749999991pt height=20.221802699999984pt/>, obtenemos la velocidad a la que se mueve el objeto, quedando la siguiente función de velocidad para cada uno respectivamente:
 
--		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/97b3eabab0cd2666843efd89c8022148.svg" align=middle width=175.4843871pt height=24.65753399999998pt/>
--		<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/0f241985110624c2d8f15a74c9f2dbe0.svg" align=middle width=161.87594115pt height=24.65753399999998pt/>
+-	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/97b3eabab0cd2666843efd89c8022148.svg" align=middle width=175.4843871pt height=24.65753399999998pt/>
+-	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/0f241985110624c2d8f15a74c9f2dbe0.svg" align=middle width=161.87594115pt height=24.65753399999998pt/>
