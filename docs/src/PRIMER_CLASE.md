@@ -16,7 +16,7 @@ Hablar de aplicaciones de los números complejos es algo dificil debido a que es
 
 Los números naturales los utilizamos para contar, es decir que todo problema que se plantee en el dominio del conteo se va a relacionar con este conjunto de números.
 
-Por otro lado, los números reales surgen como una necesidad para poder representar nuevas cantidades. Para la época en la que surgen estos números ya se tenían en cuenta los racionales, números los cuales se sabía que los egipcios utilizaban para la resolución de problemas prácticos, sin embargo, fue con el desarrollo de la matemática griega cuando se consideró el aspecto filosófico de *número*. Los pitagóricos descubrieron que las relaciones armónicas entre las notas musicales correspondían a cocientes de números enteros, lo que les inspiró a buscar proporciones numéricas en todas las demás cosas, y lo expresaron con la máxima **todo es número**. Posteriormente, se obtiene que no toda cantidad es un número racional y es ahí cuando surge la necesidad de definir una nueva forma de representar las cantidades, y nuevamente, como una necesidad se definen los números reales.
+Por otro lado, los números reales surgen como una necesidad para poder representar nuevas cantidades. Para la época en la que surgen estos números ya se tenían en cuenta los racionales, números los cuales se sabía que los egipcios utilizaban para la resolución de problemas prácticos, sin embargo, fue con el desarrollo de la matemática griega cuando se consideró el aspecto filosófico de _número_. Los pitagóricos descubrieron que las relaciones armónicas entre las notas musicales correspondían a cocientes de números enteros, lo que les inspiró a buscar proporciones numéricas en todas las demás cosas, y lo expresaron con la máxima **todo es número**. Posteriormente, se obtiene que no toda cantidad es un número racional y es ahí cuando surge la necesidad de definir una nueva forma de representar las cantidades, y nuevamente, como una necesidad se definen los números reales.
 
 De todo esto, podemos ver que los números surgen a lo largo de la historia como una necesidad para representar cantidades y aspectos del mundo físico y los números complejos no son una excepción. Surgen como una necesidad para resolver la busqueda de raices de determinados polinomios de grado 2 y 3. Por nuestra parte, vamos a evaluar como es que nos sirven los números complejos y como es que nos sirve entender cada uno de los conceptos detras de los mismos.
 
@@ -28,7 +28,7 @@ Para resumir las aplicaciones existente vamos a separar las mismas en dos catego
 
 ### Representación de objetos en el plano bidimensional
 
-Este es el aspecto de los números complejos es el que pienso primero si tengo que nombrar aplicaciones de los mismos. Como se sabe, los números complejos no solo extienden el conjunto de los números reales desde un punto de vista algebraico, sino tambien desde un punto geometrico. El plano complejo es una extensión de la linea numérica unidimensional en el cual se añade un eje, *imaginario*, el cual permite representar puntos en un plano bidimensional. Estos puntos son números complejos.
+Este es el aspecto de los números complejos es el que pienso primero si tengo que nombrar aplicaciones de los mismos. Como se sabe, los números complejos no solo extienden el conjunto de los números reales desde un punto de vista algebraico, sino tambien desde un punto geometrico. El plano complejo es una extensión de la linea numérica unidimensional en el cual se añade un eje, _imaginario_, el cual permite representar puntos en un plano bidimensional. Estos puntos son números complejos.
 
 ### Análisis de Frecuencias
 
@@ -53,21 +53,22 @@ Por otro lado, la multiplicación de dos números complejos se puede expresar m�
 
 Sean $a = x_1 + y_{1}i, b = x_2 + y_{2}i \in \mathbb{C}$ tales que:
 
--   |$a$| $= r_a, arg(a) = \theta_a$
--   |$b$| $= r_b, arg(b) = \theta_b$
+-   \|$a$\| $= r_a, arg(a) = \theta_a$
+-   \|$b$\| $= r_b, arg(b) = \theta_b$
 
 Definimos el producto complejo de la siguiente forma:
 
 $$
-\begin{aligned}
-	ab &= r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \\
-		 &= {r_{a}r_{b}}_{(\theta_a + \theta_b)}
-\end{aligned}
+	\begin{aligned}
+		ab &= r_{a}r_{b} \textbf{e}^{i(\theta_a + \theta_b)} \
+			 &= {r_{a}r_{b}}_{(\theta_a + \theta_b)}
+	\end{aligned}
 $$
 
 Luego, si $r_b = 1$ entonces la multiplicación funciona como rotación.
 
 ### Ejemplo Específico
+
 **Movimiento Oscilatorio**
 
 Para este ejemplo, queremos representar la posición de un objeto cuyo movimiento se muestra de la siguiente forma:
