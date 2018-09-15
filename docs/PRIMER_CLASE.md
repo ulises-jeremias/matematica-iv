@@ -53,7 +53,7 @@ Por otro lado, la multiplicación de dos números complejos se puede expresar m�
 
 Sean <img src="https://rawgit.com/in	git@github.com:ulises-jeremias/matematica-iv/master/docs/svgs/ed9a41f86371c04599f858809297df9b.svg?invert_in_darkmode" align=middle width=214.76392409999994pt height=22.831056599999986pt/> tales que:
 
--   |<img src="https://rawgit.com/in	git@github.com:ulises-jeremias/matematica-iv/master/docs/svgs/44bc9d542a92714cac84e01cbbb7fd61.svg?invert_in_darkmode" align=middle width=8.68915409999999pt height=14.15524440000002pt/>| <img src="https://rawgit.com/in	git@github.com:ulises-jeremias/matematica-iv/master/docs/svgs/442b001a242fceec20d4a8c75239b6cd.svg?invert_in_darkmode" align=middle width=123.25798979999998pt height=24.65753399999998pt/>
+-   |<img src="https://rawgit.com/ingit@github.com:ulises-jeremias/matematica-iv/master/docs/svgs/44bc9d542a92714cac84e01cbbb7fd61.svg?invert_in_darkmode" align=middle width=8.68915409999999pt height=14.15524440000002pt/>| <img src="https://rawgit.com/in	git@github.com:ulises-jeremias/matematica-iv/master/docs/svgs/442b001a242fceec20d4a8c75239b6cd.svg?invert_in_darkmode" align=middle width=123.25798979999998pt height=24.65753399999998pt/>
 -   |<img src="https://rawgit.com/in	git@github.com:ulises-jeremias/matematica-iv/master/docs/svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode" align=middle width=7.054796099999991pt height=22.831056599999986pt/>| <img src="https://rawgit.com/in	git@github.com:ulises-jeremias/matematica-iv/master/docs/svgs/03b5060dca839af3223c0ec9049f5a20.svg?invert_in_darkmode" align=middle width=118.92452549999999pt height=24.65753399999998pt/>
 
 Definimos el producto complejo de la siguiente forma:
