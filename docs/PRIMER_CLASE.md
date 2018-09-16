@@ -70,19 +70,19 @@ Para este ejemplo, queremos representar la posición de un objeto cuyo movimient
 
 ![][easy_harmonic_oscillator]
 
-[easy_harmonic_oscillator]: ../images/easy_harmonic_oscillator.gif
+[easy_harmonic_oscillator]: https://github.com/ulises-jeremias/matematica-iv/blob/master/images/easy_harmonic_oscillator.gif
 
 Podemos ver como se comporta el movimiento del objeto en el eje de los reales en la siguiente demostración gráfica.
 
 ![][complex_plane_sin]
 
-[complex_plane_sin]: ../images/complex_plane_sin.gif
+[complex_plane_sin]: https://github.com/ulises-jeremias/matematica-iv/blob/master/images/complex_plane_sin.gif
 
 Además, observamos en el siguiente gráfico como es el comportamiento del mismo en función de funciones trigonométricas conocidas.
 
 ![][complex_plane_cos_sin]
 
-[complex_plane_cos_sin]: ../images/complex_plane_cos_sin.gif
+[complex_plane_cos_sin]: https://github.com/ulises-jeremias/matematica-iv/blob/master/images/complex_plane_cos_sin.gif
 
 A partir de la animación anterior podemos observar los siguientes items:
 
@@ -99,7 +99,7 @@ El mundo físico no es ideal, y sabemos que la posición de un objeto cambia a m
 
 ![][damped_oscillation]
 
-[damped_oscillation]: ../images/damped_oscillation.jpg
+[damped_oscillation]: https://github.com/ulises-jeremias/matematica-iv/blob/master/images/damped_oscillation.jpg
 
 Para esto buscamos la forma de atenuar la función coseno que ya tenemos y vemos una forma de indicar cual será la amplitud inicial de la misma.
 
@@ -124,7 +124,6 @@ Juntando todas las definiciones planteadas anteriormente, resumimos la posición
 -	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/849dc24edccc420adbf6be999b851e1d.svg" align=middle width=144.57945479999998pt height=24.65753399999998pt/>
 -	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/bf3bc66e826bcc8648f3e2102dce8206.svg" align=middle width=144.28192019999997pt height=24.65753399999998pt/>
 
-
 Particularmente, si tomamos la amplitud <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/53d147e7f3fe6e47ee05b88b166bd3f6.svg" align=middle width=12.32879834999999pt height=22.465723500000017pt/> como la distancia de la caja al centro del plano es decir, el módulo de la posición, y sea <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/eb7c10fffd9c39df70d5c92ed11a4239.svg" align=middle width=76.73489669999998pt height=22.831056599999986pt/>, el argumento de la posición a lo largo del tiempo, tenemos la posición representada en **forma trinométrica**,
 
 <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/ec5ba7b70330c68f75052f6c82181193.svg" align=middle width=187.32160424999998pt height=24.65753399999998pt/>
@@ -133,3 +132,39 @@ Sabemos a su vez que, si derivamos <img src="https://github.com/ulises-jeremias/
 
 -	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/97b3eabab0cd2666843efd89c8022148.svg" align=middle width=175.4843871pt height=24.65753399999998pt/>
 -	<img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/0f241985110624c2d8f15a74c9f2dbe0.svg" align=middle width=161.87594115pt height=24.65753399999998pt/>
+
+## Análisis de Frecuencias
+
+Respecto de este area de aplicaciones vamos a enfocarnos en dos casos de aplicación. A diferencia del ejemplo anterior, no disponemos de los conceptos necesarios para terminar de comprender los fundamentos detras de estos temas pero se espera ir profundizando a medida que transcurre la materia.
+
+El código de los ejemplos que se plantean a continuación se puede encontrar en el siguiente [repositorio](https://github.com/ulises-jeremias/frequency-analysis-with-FFT) de github. En el mismo se puede encontrar una breve descripción de cada uno de los proyectos, objetivos de los mismos y formas de utilización. A continuación se muestra un resumen de los mismos.
+
+### Generación de Terrenos
+
+Como ejemplo tenemos la generación procedural de un terreno tridimensional utilizando **Perlin Noise** y la función [beginShape](https://processing.org/reference/beginShape_.html) de Processing.
+
+### Análisis de Audio
+
+#### ¿Por qué un visualizador de audio?
+
+Mi objetivo principal al construir esto fue aprender más sobre ProcessingJS y Python, así como mostrar cómo funciona la Transformada Rápida de Fourier.
+
+Sin embargo, usarlo en este proyecto me permitió visualizarlo literalmente, lo que lo hizo mucho más fácil de entender. Descubrí que tener un visualizador de música también facilitaba a la clase entender cuándo se presentó este proyecto.
+
+##### ¿Qué es la Transformada Rápida de Fourier?
+
+¡Bien, es una versión más rápida de la Transformada de Fourier! Pero para una respuesta real, una Transformada de Fourier es solo una forma diferente de ver el audio. Piensen en la apariencia de un MP3 cuando lo reproduce en una computadora: ¿pueden ver dónde el sonido se vuelve más alto y más silencioso en función de qué tan grandes son las formas de onda?
+
+Por lo general, vemos música en el dominio del tiempo es decir, vemos cómo el audio cambia a medida que transcurre el tiempo. La Transformada de Fourier muestra el audio en el dominio de la frecuencia, es decir, en su lugar, vemos qué frecuencias están presentes en la canción y sus amplitudes (básicamente, qué tan fuertes o suaves son).
+
+Entonces, si hay muchos graves pesados ​​en la canción, se mostrarán muchas frecuencias más bajas en el gráfico. Si una canción tiene muchos solos agudos de guitarra, la representación gráfica de la canción mostrará frecuencias mucho más altas.
+
+##### ¿Cómo muestra este visualizador eso?
+
+Afortunadamente, al usar la biblioteca P5.js, recibimos una biblioteca de sonidos que hace el trabajo dificil por nosotros, para que podamos entender mejor cómo el visualizador muestra una transformación de Fourier.
+
+En pocas palabras, la forma en que funciona el visualizador es como la canción se reproduce, se ejecuta constantemente a través de una transformada de Fourier y el graficado de la salida. Entonces básicamente toma la canción en pedazos muy pequeños, la analiza con la transformada de Fourier y luego grafica los resultados.
+
+#### Analizador de espectro de audio
+
+En este proyecto, se puede ver cómo se representa gráficamente la función de onda de un audio recibido por micrófono en comparación con el espectro de la misma. Se utiliza `scipy.fftpack` para calcular la FFT y mostrar el espectro de audio en tiempo real usando algunas herramientas de Python.
