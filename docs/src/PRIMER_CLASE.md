@@ -44,7 +44,7 @@ Entre los ejemplos tenemos,
 
 ### Traslaciones y Rotaciones
 
-Los números complejos forman un **Cuerpo**, por lo que dos números complejos a y b pueden sumarse y multiplicarse. Veremos más adelante en la materia lo que es un **Cuerpo**, pero por ahora quedemonos con el concepto de que la suma y la multiplicación son operaciones definidas en los números complejos, es decir, estan definidas y pueden utilizarse.
+Los números complejos forman un _Cuerpo_, por lo que dos números complejos a y b pueden sumarse y multiplicarse. Veremos más adelante en la materia lo que es un Cuerpo, pero por ahora quedemonos con el concepto de que la suma y la multiplicación son operaciones definidas en los números complejos, es decir, estan definidas y pueden utilizarse.
 
 Geometricamente hablando, los números complejos se suman como vectores euclideos, aunque también se puede ver como la suma de dos polinomios.
 La suma de dos números complejos puede entenderse como la traslacion de un punto en el plano y esto me puede permitir una forma rápida de definir el movimiento de un objeto en el plano complejo.
