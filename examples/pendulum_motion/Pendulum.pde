@@ -4,7 +4,7 @@ class Pendulum {
         float r;               // Length of arm
         float angle;           // Pendulum arm angle
         float aVelocity;       // Angle velocity
-        float aAcceleration;   // Angle acceleration
+        float anAcceleration;  // Angle acceleration
         float damping;         // Arbitrary damping amount
 
         Pendulum(PVector origin_, float r_) {
@@ -14,7 +14,7 @@ class Pendulum {
                 angle = PI/4;
 
                 aVelocity = 0.0;
-                aAcceleration = 0.0;
+                anAcceleration = 0.0;
 
                 // An arbitrary damping so that the Pendulum slows
                 // over time
@@ -31,10 +31,10 @@ class Pendulum {
                 float gravity = 0.4;
 
                 // Formula we worked out for angular acceleration
-                aAcceleration = (-1 * gravity / r) * sin(angle);
+                anAcceleration = (-1 * gravity / r) * sin(angle);
 
                 // Standard angular motion algorithm
-                aVelocity += aAcceleration;
+                aVelocity += anAcceleration;
                 angle += aVelocity;
 
                 // Apply some damping.
@@ -50,7 +50,7 @@ class Pendulum {
                 stroke(0);
 
                 // The arm
-                line(origin.x,origin.y, location.x, location.y);
+                line(origin.x, origin.y, location.x, location.y);
                 fill(175);
 
                 // The object
