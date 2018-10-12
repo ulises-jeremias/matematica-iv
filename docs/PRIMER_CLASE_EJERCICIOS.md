@@ -5,7 +5,8 @@
 Se cuenta con una persona, Facundo, cuya posición y orientación se puede plantear con el número <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/5a3d05cb9c4b45e85ae957ac1efb68a3.svg" align=middle width=64.11071204999998pt height=28.511366399999982pt/>. Cual de los siguientes números complejos debería utilizar para rotar a Facundo de forma tal que quede mirando hacia el noreste, sin alterar la distancia a la cual se encuentra del centro.
 
 -   <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/48117fb3b503cd98529163df473784ee.svg" align=middle width=29.623080299999987pt height=27.84332099999998pt/>
--   <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/32c381cb6c1080acb09014619bc2378a.svg" align=middle width=42.577474499999994pt height=31.359338999999984pt/>e^{i \frac{7 \pi}{11}}
+-   <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/337aee7885cd6a46021b32641426ca69.svg" align=middle width=26.997570599999985pt height=31.359338999999984pt/>
+-   <img src="https://github.com/ulises-jeremias/matematica-iv/blob/master/docs/svgs/122ff5584bb4d9d9707971d90c00f7c1.svg" align=middle width=26.997570599999985pt height=31.359338999999984pt/>
 
 ## Ejercicio 2
 

@@ -5,8 +5,8 @@
 Se cuenta con una persona, Facundo, cuya posición y orientación se puede plantear con el número $4 - 4\sqrt{3}i$. Cual de los siguientes números complejos debería utilizar para rotar a Facundo de forma tal que quede mirando hacia el noreste, sin alterar la distancia a la cual se encuentra del centro.
 
 -   $2e^{i \frac{\pi}{2}}$
--   $e^{i \frac{7 \pi}{12}}
--   $e^{i \frac{7 \pi}{11}}
+-   $e^{i \frac{7 \pi}{12}}$
+-   $e^{i \frac{7 \pi}{11}}$
 
 ## Ejercicio 2
 
