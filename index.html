@@ -371,6 +371,133 @@
 						</ul>
 					</section>
 				</section>
+				<section>
+					<h2>Segunda Clase de Aplicaciones</h2>
+				</section>
+				<section>
+					<section>
+						<h3>Machine Learning</h3>
+					</section>
+					<section>
+						Subcampo de las ciencias de la computación y una rama de la inteligencia artificial, 
+						cuyo objetivo es desarrollar técnicas que permitan que las computadoras aprendan.
+					</section>
+					<section>
+						De forma más concreta, se trata de crear programas capaces de generalizar
+						comportamientos a partir de una información suministrada en forma de ejemplos.
+					</section>
+					<section>
+						El aprendizaje automático puede ser visto como un intento de automatizar
+						algunas partes del método científico mediante métodos matemáticos.
+					</section>
+					<section>
+						Es una de las ramas que, junto a la estadística, minería de datos y analítica predictíva, da lugar
+						a la Ciencia de Datos.
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Matemática para Machine Learning</h3>
+					</section>
+					<section>
+						Para ver como afectan las distintas ramas de la Matemática vamos
+						a analizar el siguiente gráfico.
+					</section>
+					<section>
+						<h2>INSERTE IMAGEN PILLA AQUÍ!!!</h2>
+					</section>
+					<section>
+						En este gráfico se expone el núcleo de todo lo que da sentido al Machine Learning.
+					</section>
+					<section>
+						<ul>
+							<li>
+								<strong>Estadística</strong> es el núcleo de todo esto.
+							</li>
+							<li class="fragment">
+								<strong>Cálculo</strong> nos dice como aprende y se optimizan nuestros
+								modelos.
+							</li>
+							<li class="fragment">
+								<strong>Álgebra Lineal</strong> permite la ejecución de estos algoritmos
+								en conjuntos de datos masivos.
+							</li>
+							<li class="fragment">
+								<strong>Probabilidad</strong> ayuda a predecir la probabilidad de que un evento ocurra.
+							</li>
+						</ul>
+					</section>
+					<section>
+						Para entender como entran en juego las ramas mensionadas anteriormente veamos
+						un ejemplo simple a continuación.
+					</section>
+					<section>
+						<h5><a href="https://www.youtube.com/watch?v=8onB7rPG4Pk" target="_blank" rel="noopener noreferrer">Ejemplo</a></h5>
+						<blockquote cite="https://www.youtube.com/watch?v=8onB7rPG4Pk">
+							"The problem is to predict the price of an apartment in an up-and-coming neighborhood in NewYork City"
+						</blockquote>
+					</section>
+					<section>
+						<h5>Apartment Prices in NY</h5>
+						<table>
+							<thead><tr>
+								<th>Price Per Square Foot</th>
+								<th>Total Price?</th>
+							</tr></thead>
+							<tbody>
+								<tr>
+									<td>85</td>
+									<td>$534.760</td>
+								</tr>
+								<tr>
+									<td>67</td>
+									<td>$535.717</td>
+								</tr>
+								<tr>
+									<td>71</td>
+									<td>$833.333</td>
+								</tr>
+								<tr>
+									<td>18</td>
+									<td>$728.377</td>
+								</tr>
+								<tr>
+									<td>99</td>
+									<td>$899.945</td>
+								</tr>
+								<tr>
+									<td>69</td>
+									<td>$760.564</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						Por un lado tenemos el precio por "pie cuadrado" de un departamento y por
+						el otro tenemos el precio completo del mismo.
+					</section>
+					<section>
+						Tiene que existir alguna correlación entre ambos y, en caso de existir,
+						podemos crear un modelo predictivo que nos permita aprender cual es esa correlación
+						para utilizarla en el futuro.
+					</section>
+					<section>
+						
+					</section>
+				</section>
+				<section>
+					<section data-background="images/tensor-flow.jpeg"></section>
+					<section>
+						<strong>TensorFlow</strong> es una biblioteca de software de código abierto para la programación 
+						de flujo de datos en una variedad de tareas.
+						
+					</section>
+					<section>
+						Es una biblioteca matemática simbólica, y también se usa para aplicaciones de 
+						aprendizaje automático como las redes neuronales. Se utiliza tanto para 
+						investigación como para producción en Google.
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -384,6 +511,39 @@
 			Reveal.initialize({
 				history: true,
 				transition: 'linear',
+
+				chart: {
+					defaults: { 
+						global: { 
+							title: { fontColor: "#FFF" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#FFF" },
+							},
+							tooltips: {
+								labels: { fontColor: "#FFF" },
+							},
+						},
+						scale: { 
+							scaleLabel: { fontColor: "#FFF" }, 
+							gridLines: { color: "#FFF", zeroLineColor: "#FFF" }, 
+							ticks: { fontColor: "#FFF" }, 
+						} 
+					},
+					line: { 
+						borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], 
+						borderDash: [ [5,10], [0,0] ] 
+					}, 
+					bar: { 
+						backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]
+					},
+					pie: { 
+						backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]
+					},
+					radar: { 
+						borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]
+					}, 
+				},
 
 				math: {
 					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
@@ -403,7 +563,10 @@
 					},
 
 					{ src: 'lib/js/classList.js' },
-					{ src: 'plugin/math/math.js', async: true }
+					{ src: 'plugin/math/math.js', async: true },
+
+					{ src: 'plugin/chart/Chart.min.js' },				
+					{ src: 'plugin/chart/csv2chart.js' },
 				]
 			});
 		</script>
