@@ -482,7 +482,75 @@
 						para utilizarla en el futuro.
 					</section>
 					<section>
-						
+						<canvas class="stretch" data-chart="line">
+							Apartment, 728.377, 535.717, 760.564, 833.333, 534.760, 899.945
+							<!-- 
+							{ 
+								"data": {
+									"labels": [18, 67, 69, 71, 85, 99],
+									"datasets": [{ "borderColor": "#0ff", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+								}
+							}
+							-->
+						</canvas>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Regresión Lineal</h3>
+						<h6>Ejemplo</h6>
+					</section>
+					<section>
+						En este caso particular vamos a buscar la correlación lineal
+						entre las notas obtenidas en un examen por alumno y horas de estudio.
+					</section>
+					<section>
+						Uno puede pensar a priori que, cuanto más horas de estudio invierte una persona,
+						mejores serán sus calificaciones.
+					</section>
+					<section>
+						Pero vamos a demostrarlo matematicamente utilizando esta técnica simple de
+						Machine Learning. Y para esto vamos a analizar el funcionamiento del método más popular de optimización,
+						<h3 class="fragment fade-up">Gradient Descent</h3>
+					</section>
+					<section>
+						<h4>Visualización</h4>
+						<img src="images/gradient_descent_example.gif" alt="">
+					</section>
+					<section>
+						Todo problema de Machine Learning se pienza en terminos de la <span class="fragment highlight-red">optimización</span>,
+						en donde vamos a tener una <span class="fragment highlight-blue">función de pérdida</span> que queremos <span class="fragment highlight-red">minimizar</span>
+						a travez del tiempo y, en este caso específico, utilizamos Gradient Descent
+						como la técnica que nos va a permitir esto.
+					</section>
+					<section>
+						Como ya se menciona anteriormente, la perdida será evaluada utilizando
+						la función de error EMD.
+					</section>
+					<section>
+						<img src="images/r_squared.png" alt="">
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Definición:</h3>
+						\[
+							Error_{(m, b)} = \frac{1}{N} \sum_{i=1}^{N} (y_i - (m x_i + b))^2
+						\]
+					</section>
+					<section>
+						<pre><code class="python hljs" data-trim contenteditable>
+							def compute_error_for_line_given_points(b, m, points):
+								"""
+								y = mx + b
+								m is slope, b is y-intercept
+								"""
+							
+								totalError = 0
+								
+								for [x, y] in points:
+									totalError += (y - (m * x + b)) ** 2
+							
+								return totalError / float(len(points))
+						</code></pre>
 					</section>
 				</section>
 				<section>
@@ -490,7 +558,6 @@
 					<section>
 						<strong>TensorFlow</strong> es una biblioteca de software de código abierto para la programación 
 						de flujo de datos en una variedad de tareas.
-						
 					</section>
 					<section>
 						Es una biblioteca matemática simbólica, y también se usa para aplicaciones de 
