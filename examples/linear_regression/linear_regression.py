@@ -24,11 +24,11 @@ def step_gradient(b, m, points, learning_rate):
     N = float(len(points))
 
     for [x, y] in points:
-        b_gradient += -(2/N) * (y - ((m * x) + b))
-        m_gradient += -(2/N) * x * (y - ((m * x) + b))
+        b_gradient += y - ((m * x) + b)
+        m_gradient += x * (y - ((m * x) + b))
 
-    new_b = b - (learning_rate * b_gradient)
-    new_m = m - (learning_rate * m_gradient)
+    new_b = b - (learning_rate * (-2/N) * b_gradient)
+    new_m = m - (learning_rate * (-2/N) * m_gradient)
 
     return [new_b, new_m]
 
