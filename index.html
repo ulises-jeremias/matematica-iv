@@ -404,7 +404,7 @@
 						a analizar el siguiente gráfico.
 					</section>
 					<section>
-						<h2>INSERTE IMAGEN PILLA AQUÍ!!!</h2>
+						<img src="images/diamond.png" alt="">
 					</section>
 					<section>
 						En este gráfico se expone el núcleo de todo lo que da sentido al Machine Learning.
@@ -482,17 +482,41 @@
 						para utilizarla en el futuro.
 					</section>
 					<section>
-						<canvas class="stretch" data-chart="line">
-							Apartment, 728.377, 535.717, 760.564, 833.333, 534.760, 899.945
-							<!-- 
-							{ 
-								"data": {
-									"labels": [18, 67, 69, 71, 85, 99],
-									"datasets": [{ "borderColor": "#0ff", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+						<div>
+							<canvas class="stretch" data-chart="line">
+								Apartment, 728377, 437328, 403631, 535717, 760564, 833333, 914339, 534760, 899945, 480232
+								<!-- 
+								{ 
+									"data": {
+										"labels": [18, 54, 61, 67, 69, 71, 78, 85, 99, 100],
+										"datasets": [{ "borderColor": "#0ff", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+									}
 								}
-							}
-							-->
-						</canvas>
+								-->
+							</canvas>
+						</div>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Estadística</h3>
+						Colección de técnicas que permiten extraer información valiosa de un conjunto de datos.
+						Es una herramienta para crear un entendimiento a partir de un conjunto de números.
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h5>Inferencia Estadística</h5>
+						Es el proceso de crear una predicción sobre una población de datos basándose en una muestra más
+						pequeña a partir de la cual se pueda inferir ciertos parámetros significativos para la predicción.
+					</section>
+					<section>
+						Teniendo en cuenta que queremos hallar una linea, nosotros vamos a utilizar
+						una herramienta estadística llamada,
+						<h3 class="fragment fade-up">Regresión Lineal</h3>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Regresión Lineal</h3>
+						Nos permite resumir la relación entre dos variables, una dependiente y otra independiente.
+					</section>
+					<section>
+						<img src="images/line.png" alt="">
 					</section>
 				</section>
 				<section>
@@ -520,12 +544,12 @@
 					<section>
 						Todo problema de Machine Learning se pienza en terminos de la <span class="fragment highlight-red">optimización</span>,
 						en donde vamos a tener una <span class="fragment highlight-blue">función de pérdida</span> que queremos <span class="fragment highlight-red">minimizar</span>
-						a travez del tiempo y, en este caso específico, utilizamos Gradient Descent
+						a través del tiempo y, en este caso específico, utilizamos Gradient Descent
 						como la técnica que nos va a permitir esto.
 					</section>
 					<section>
-						Como ya se menciona anteriormente, la perdida será evaluada utilizando
-						la función de error EMD.
+						Como ya se menciona anteriormente, la pérdida será evaluada utilizando
+						la función de Error Cuadrático Medio.
 					</section>
 					<section>
 						<img src="images/r_squared.png" alt="">
@@ -538,7 +562,7 @@
 					</section>
 					<section>
 						<pre><code class="python hljs" data-trim contenteditable>
-							def compute_error_for_line_given_points(b, m, points):
+							def compute_error(b, m, points):
 								"""
 								y = mx + b
 								m is slope, b is y-intercept
@@ -551,6 +575,54 @@
 							
 								return totalError / float(len(points))
 						</code></pre>
+					</section>
+					<section>
+						Luego, dada la función descripta anteriormente, necesitamos evaluar algún
+						método que nos permita optimizar el error de forma que sea el mínimo.
+					</section>
+					<section>
+						Para esto evaluamos las derivadas parciales, respecto de $m$ y $b$,
+						para realizar el descenso de gradiente.
+					</section>
+					<section data-background-transition="zoom" data-background="#4d7e65">
+						\[
+							\frac{\partial}{\partial m} = \frac{2}{N} \sum_{i=1}^{N} -x_i (y_i - (m x_i + b))
+						\]
+
+						<br>
+
+						\[
+							\frac{\partial}{\partial b} = \frac{2}{N} \sum_{i=1}^{N} -(y_i - (m x_i + b))
+						\]
+					</section>
+					<section>
+						<pre><code style="margin-left: -7.5%; width: 115%;" class="python hljs" data-trim contenteditable>
+							def gradient_descent(points, b, m, learning_rate, num_iterations):
+								for _ in range(0, num_iterations):
+									[b, m] = step_gradient(b, m, array(points), learning_rate)
+								
+								return [b, m]
+						</code></pre>
+					</section>
+					<section>
+						<pre><code class="python hljs" data-trim contenteditable>
+							def step_gradient(b, m, points, learning_rate):
+								b_gradient = 0
+								m_gradient = 0
+								N = float(len(points))
+
+								for [x, y] in points:
+									b_gradient += y - ((m * x) + b)
+									m_gradient += x * (y - ((m * x) + b))
+
+								new_b = b - (learning_rate * (-2/N) * b_gradient)
+								new_m = m - (learning_rate * (-2/N) * m_gradient)
+
+								return [new_b, new_m]
+						</code></pre>
+					</section>
+					<section>
+						<h3>Ver Ejemplo</h3>
 					</section>
 				</section>
 				<section>
@@ -584,7 +656,7 @@
 						global: { 
 							title: { fontColor: "#FFF" }, 
 							legend: {
-								position: "top",
+								position: "bottom",
 								labels: { fontColor: "#FFF" },
 							},
 							tooltips: {

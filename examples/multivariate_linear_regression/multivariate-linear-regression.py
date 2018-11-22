@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 from random import seed
 from random import randrange
 from csv import reader

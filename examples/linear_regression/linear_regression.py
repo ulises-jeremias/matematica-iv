@@ -3,6 +3,7 @@ The optimal values of m and b can be actually calculated with way less effort th
 this is just to demonstrate gradient descent
 """
 
+from __future__ import print_function
 from numpy import (array, genfromtxt)
 
 def compute_error_for_line_given_points(b, m, points):
