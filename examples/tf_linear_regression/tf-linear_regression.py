@@ -73,14 +73,16 @@ with tf.Session() as sess:
     test_Y = numpy.asarray([1.84, 2.273, 3.2, 2.831, 2.92, 3.24, 1.35, 1.03])
 
     print("Testing... (Mean square loss Comparison)")
+    
     testing_cost = sess.run(
         tf.reduce_sum(tf.pow(pred - Y, 2)) / (2 * test_X.shape[0]),
         feed_dict={X: test_X, Y: test_Y})  # same function as cost above
+
     print("Testing cost=", testing_cost)
-    print("Absolute mean square loss difference:", abs(
-        training_cost - testing_cost))
+    print("Absolute mean square loss difference:", abs(training_cost - testing_cost))
 
     plt.plot(test_X, test_Y, 'bo', label='Testing data')
     plt.plot(train_X, sess.run(W) * train_X + sess.run(b), label='Fitted line')
     plt.legend()
     plt.show()
+    

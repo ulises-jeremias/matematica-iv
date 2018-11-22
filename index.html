@@ -518,6 +518,88 @@
 					<section>
 						<img src="images/line.png" alt="">
 					</section>
+					<section>
+						Nosotros sabemos que existen valores ideales para $m$ y $b$
+						y son aquellos en los que, al utilizar esos valores,
+						significan el mejor ajuste para nuestro conjunto de datos.
+					</section>
+					<section>
+						Es por esto que necesitamos una herramienta que nos permite
+						conocer el error de nuestra predicción. Necesitamos una función
+						de error la cual podamos optimizar para que sea mínima, e.g.,
+						<h3 class="fragment fade-up">Error Cuadrático Medio</h3>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Definición</h3>
+						\[
+							ECM = \frac{1}{N} \sum_{i=1}^{N} (Y - \hat{Y})^2
+						\]
+					</section>
+					<section>
+						<p>Y ahora que tenemos los datos, y sabemos como calcular el error de nuestra
+							predicción, podemos construir un gráfico de la siguiente forma:</p>
+
+						<a href="#" class="navigate-down">
+							<img
+								alt="Down arrow"
+								data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+								style="border: none;"
+								width="178"
+								height="238"
+							>
+						</a>
+					</section>
+					<section>
+						<img src="images/3d_plot.png" alt="">
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Cálculo</h3>
+						Disciplina matemática que permite el estudio del cambio, y del cual sale un algoritmo de optimización
+						que utilizaremos para resolver este problema, <span class="fragment highlight-blue">Gradient Descent</span>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Gradient Descent</h3>
+						Algoritmo de optimización iterativo de primer orden para encontrar el mínimo 
+						de una función.
+						<h5 class="fragment fade-up">¡¡No confundir con Method of Steepest Descent!!</h5>
+					</section>
+					<section>
+						Para encontrar el mínimo local de una función que utiliza el descenso de gradiente, 
+						se toman pasos proporcionales al negativo del gradiente (o gradiente aproximado) 
+						de la función en el punto actual.
+					</section>
+					<section>
+						Si, en cambio, uno toma pasos proporcionales al 
+						positivo del gradiente, uno se acerca al máximo local de esa función; 
+						el procedimiento se conoce como ascenso de gradiente.
+					</section>
+					<section>
+						<h3>Ejemplo</h3>
+						<h6>Lo veremos en breve</h6>
+					</section>
+					<section>
+						Pero, que pasaría si no buscamos la correlación entre dos variables,
+						sino que además queremos saber la relación con la cantidad de baños,
+						habitaciones, etc.
+					</section>
+					<section>
+						<h3>Multivariate Regression</h3>
+
+						\[
+							Y_t = a_1 + b_2 X_{2t} + ... + b_{(n+1)} X_{(n+1)t} + e_t
+						\]
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Algebra Lineal</h3>
+						Es la rama de la matemática que estudia espacios multivariados,
+						las transformaciones lineales existentes entre ellos y como
+						pueden representarse estas cuestiones en terminos de matrices y espacios vectoriales.
+					</section>
+					<section>
+						<h5>Pero, donde entra Probabilidad en todo esto?</h5>
+
+						<h3 class="fragment fade-up">Logistic Regression</h3>
+					</section>
 				</section>
 				<section>
 					<section>
@@ -533,7 +615,7 @@
 						mejores serán sus calificaciones.
 					</section>
 					<section>
-						Pero vamos a demostrarlo matematicamente utilizando esta técnica simple de
+						Pero vamos a demostrarlo matematicamente utilizando una técnica simple de
 						Machine Learning. Y para esto vamos a analizar el funcionamiento del método más popular de optimización,
 						<h3 class="fragment fade-up">Gradient Descent</h3>
 					</section>
