@@ -371,6 +371,357 @@
 						</ul>
 					</section>
 				</section>
+				<section>
+					<h2>Segunda Clase de Aplicaciones</h2>
+				</section>
+				<section>
+					<section>
+						<h3>Machine Learning</h3>
+					</section>
+					<section>
+						Subcampo de las ciencias de la computación y una rama de la inteligencia artificial, 
+						cuyo objetivo es desarrollar técnicas que permitan que las computadoras aprendan.
+					</section>
+					<section>
+						De forma más concreta, se trata de crear programas capaces de generalizar
+						comportamientos a partir de una información suministrada en forma de ejemplos.
+					</section>
+					<section>
+						El aprendizaje automático puede ser visto como un intento de automatizar
+						algunas partes del método científico mediante métodos matemáticos.
+					</section>
+					<section>
+						Es una de las ramas que, junto a la estadística, minería de datos y analítica predictíva, da lugar
+						a la Ciencia de Datos.
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Matemática para Machine Learning</h3>
+					</section>
+					<section>
+						Para ver como afectan las distintas ramas de la Matemática vamos
+						a analizar el siguiente gráfico.
+					</section>
+					<section>
+						<img src="images/diamond.png" alt="">
+					</section>
+					<section>
+						En este gráfico se expone el núcleo de todo lo que da sentido al Machine Learning.
+					</section>
+					<section>
+						<ul>
+							<li>
+								<strong>Estadística</strong> es el núcleo de todo esto.
+							</li>
+							<li class="fragment">
+								<strong>Cálculo</strong> nos dice como aprende y se optimizan nuestros
+								modelos.
+							</li>
+							<li class="fragment">
+								<strong>Álgebra Lineal</strong> permite la ejecución de estos algoritmos
+								en conjuntos de datos masivos.
+							</li>
+							<li class="fragment">
+								<strong>Probabilidad</strong> ayuda a predecir la probabilidad de que un evento ocurra.
+							</li>
+						</ul>
+					</section>
+					<section>
+						Para entender como entran en juego las ramas mensionadas anteriormente veamos
+						un ejemplo simple a continuación.
+					</section>
+					<section>
+						<h5><a href="https://www.youtube.com/watch?v=8onB7rPG4Pk" target="_blank" rel="noopener noreferrer">Ejemplo</a></h5>
+						<blockquote cite="https://www.youtube.com/watch?v=8onB7rPG4Pk">
+							"The problem is to predict the price of an apartment in an up-and-coming neighborhood in NewYork City"
+						</blockquote>
+					</section>
+					<section>
+						<h5>Apartment Prices in NY</h5>
+						<table>
+							<thead><tr>
+								<th>Price Per Square Foot</th>
+								<th>Total Price?</th>
+							</tr></thead>
+							<tbody>
+								<tr>
+									<td>85</td>
+									<td>$534.760</td>
+								</tr>
+								<tr>
+									<td>67</td>
+									<td>$535.717</td>
+								</tr>
+								<tr>
+									<td>71</td>
+									<td>$833.333</td>
+								</tr>
+								<tr>
+									<td>18</td>
+									<td>$728.377</td>
+								</tr>
+								<tr>
+									<td>99</td>
+									<td>$899.945</td>
+								</tr>
+								<tr>
+									<td>69</td>
+									<td>$760.564</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						Por un lado tenemos el precio por "pie cuadrado" de un departamento y por
+						el otro tenemos el precio completo del mismo.
+					</section>
+					<section>
+						Tiene que existir alguna correlación entre ambos y, en caso de existir,
+						podemos crear un modelo predictivo que nos permita aprender cual es esa correlación
+						para utilizarla en el futuro.
+					</section>
+					<section>
+						<div>
+							<canvas class="stretch" data-chart="line">
+								Apartment, 728377, 437328, 403631, 535717, 760564, 833333, 914339, 534760, 899945, 480232
+								<!-- 
+								{ 
+									"data": {
+										"labels": [18, 54, 61, 67, 69, 71, 78, 85, 99, 100],
+										"datasets": [{ "borderColor": "#0ff", "borderDash": ["5","10"] }, { "borderColor": "#0ff" } ]
+									}
+								}
+								-->
+							</canvas>
+						</div>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Estadística</h3>
+						Colección de técnicas que permiten extraer información valiosa de un conjunto de datos.
+						Es una herramienta para crear un entendimiento a partir de un conjunto de números.
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h5>Inferencia Estadística</h5>
+						Es el proceso de crear una predicción sobre una población de datos basándose en una muestra más
+						pequeña a partir de la cual se pueda inferir ciertos parámetros significativos para la predicción.
+					</section>
+					<section>
+						Teniendo en cuenta que queremos hallar una linea, nosotros vamos a utilizar
+						una herramienta estadística llamada,
+						<h3 class="fragment fade-up">Regresión Lineal</h3>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Regresión Lineal</h3>
+						Nos permite resumir la relación entre dos variables, una dependiente y otra independiente.
+					</section>
+					<section>
+						<img src="images/line.png" alt="">
+					</section>
+					<section>
+						Nosotros sabemos que existen valores ideales para $m$ y $b$
+						y son aquellos en los que, al utilizar esos valores,
+						significan el mejor ajuste para nuestro conjunto de datos.
+					</section>
+					<section>
+						Es por esto que necesitamos una herramienta que nos permite
+						conocer el error de nuestra predicción. Necesitamos una función
+						de error la cual podamos optimizar para que sea mínima, e.g.,
+						<h3 class="fragment fade-up">Error Cuadrático Medio</h3>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Definición</h3>
+						\[
+							ECM = \frac{1}{N} \sum_{i=1}^{N} (Y - \hat{Y})^2
+						\]
+					</section>
+					<section>
+						<p>Y ahora que tenemos los datos, y sabemos como calcular el error de nuestra
+							predicción, podemos construir un gráfico de la siguiente forma:</p>
+
+						<a href="#" class="navigate-down">
+							<img
+								alt="Down arrow"
+								data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+								style="border: none;"
+								width="178"
+								height="238"
+							>
+						</a>
+					</section>
+					<section>
+						<img height="500px" src="images/3d_plot.png" alt="">
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Cálculo</h3>
+						Disciplina matemática que permite el estudio del cambio, y del cual sale un algoritmo de optimización
+						que utilizaremos para resolver este problema, <span class="fragment highlight-blue">Gradient Descent</span>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Gradient Descent</h3>
+						Algoritmo de optimización iterativo de primer orden para encontrar el mínimo 
+						de una función.
+						<h5 class="fragment fade-up">¡¡No confundir con Method of Steepest Descent!!</h5>
+					</section>
+					<section>
+						Para encontrar el mínimo local de una función que utiliza el descenso de gradiente, 
+						se toman pasos proporcionales al negativo del gradiente (o gradiente aproximado) 
+						de la función en el punto actual.
+					</section>
+					<section>
+						Si, en cambio, uno toma pasos proporcionales al 
+						positivo del gradiente, uno se acerca al máximo local de esa función; 
+						el procedimiento se conoce como ascenso de gradiente.
+					</section>
+					<section>
+						<h3>Ejemplo</h3>
+						<h6>Lo veremos en breve</h6>
+					</section>
+					<section>
+						Pero, que pasaría si no buscamos la correlación entre dos variables,
+						sino que además queremos saber la relación con la cantidad de baños,
+						habitaciones, etc.
+					</section>
+					<section>
+						<h3>Multivariate Regression</h3>
+
+						\[
+							Y_t = a_1 + b_2 X_{2t} + ... + b_{(n+1)} X_{(n+1)t} + e_t
+						\]
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Algebra Lineal</h3>
+						Es la rama de la matemática que estudia espacios multivariados,
+						las transformaciones lineales existentes entre ellos y como
+						pueden representarse estas cuestiones en terminos de matrices y espacios vectoriales.
+					</section>
+					<section>
+						<h5>Pero, donde entra Probabilidad en todo esto?</h5>
+
+						<h3 class="fragment fade-up">Logistic Regression</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Regresión Lineal</h3>
+						<h6>Ejemplo</h6>
+					</section>
+					<section>
+						En este caso particular vamos a buscar la correlación lineal
+						entre las notas obtenidas en un examen por alumno y horas de estudio.
+					</section>
+					<section>
+						Uno puede pensar a priori que, cuanto más horas de estudio invierte una persona,
+						mejores serán sus calificaciones.
+					</section>
+					<section>
+						Pero vamos a demostrarlo matematicamente utilizando una técnica simple de
+						Machine Learning. Y para esto vamos a analizar el funcionamiento del método más popular de optimización,
+						<h3 class="fragment fade-up">Gradient Descent</h3>
+					</section>
+					<section>
+						<h4>Visualización</h4>
+						<img src="images/gradient_descent_example.gif" alt="">
+					</section>
+					<section>
+						Todo problema de Machine Learning se pienza en terminos de la <span class="fragment highlight-red">optimización</span>,
+						en donde vamos a tener una <span class="fragment highlight-blue">función de pérdida</span> que queremos <span class="fragment highlight-red">minimizar</span>
+						a través del tiempo y, en este caso específico, utilizamos Gradient Descent
+						como la técnica que nos va a permitir esto.
+					</section>
+					<section>
+						Como ya se menciona anteriormente, la pérdida será evaluada utilizando
+						la función de Error Cuadrático Medio.
+					</section>
+					<section>
+						<img src="images/r_squared.png" alt="">
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Definición:</h3>
+						\[
+							Error_{(m, b)} = \frac{1}{N} \sum_{i=1}^{N} (y_i - (m x_i + b))^2
+						\]
+					</section>
+					<section>
+						<pre><code class="python hljs" data-trim contenteditable>
+							def compute_error(b, m, points):
+								"""
+								y = mx + b
+								m is slope, b is y-intercept
+								"""
+							
+								totalError = 0
+								
+								for [x, y] in points:
+									totalError += (y - (m * x + b)) ** 2
+							
+								return totalError / float(len(points))
+						</code></pre>
+					</section>
+					<section>
+						Luego, dada la función descripta anteriormente, necesitamos evaluar algún
+						método que nos permita optimizar el error de forma que sea el mínimo.
+					</section>
+					<section>
+						Para esto evaluamos las derivadas parciales, respecto de $m$ y $b$,
+						para realizar el descenso de gradiente.
+					</section>
+					<section data-background-transition="zoom" data-background="#4d7e65">
+						\[
+							\frac{\partial}{\partial m} = \frac{2}{N} \sum_{i=1}^{N} -x_i (y_i - (m x_i + b))
+						\]
+
+						<br>
+
+						\[
+							\frac{\partial}{\partial b} = \frac{2}{N} \sum_{i=1}^{N} -(y_i - (m x_i + b))
+						\]
+					</section>
+					<section>
+						<pre><code style="margin-left: -7.5%; width: 115%;" class="python hljs" data-trim contenteditable>
+							def gradient_descent(points, b, m, learning_rate, num_iterations):
+								for _ in range(0, num_iterations):
+									[b, m] = step_gradient(b, m, array(points), learning_rate)
+								
+								return [b, m]
+						</code></pre>
+					</section>
+					<section>
+						<pre><code class="python hljs" data-trim contenteditable>
+							def step_gradient(b, m, points, learning_rate):
+								b_gradient = 0
+								m_gradient = 0
+								N = float(len(points))
+
+								for [x, y] in points:
+									b_gradient += y - ((m * x) + b)
+									m_gradient += x * (y - ((m * x) + b))
+
+								new_b = b - (learning_rate * (-2/N) * b_gradient)
+								new_m = m - (learning_rate * (-2/N) * m_gradient)
+
+								return [new_b, new_m]
+						</code></pre>
+					</section>
+					<section>
+						<h3>Ver Ejemplo</h3>
+					</section>
+				</section>
+				<section>
+					<section data-background="images/tensor-flow.jpeg"></section>
+					<section>
+						<strong>TensorFlow</strong> es una biblioteca de software de código abierto para la programación 
+						de flujo de datos en una variedad de tareas.
+					</section>
+					<section>
+						Es una biblioteca matemática simbólica, y también se usa para aplicaciones de 
+						aprendizaje automático como las redes neuronales. Se utiliza tanto para 
+						investigación como para producción en Google.
+					</section>
+					<section>
+						<h3>Ver Ejemplo</h3>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -384,6 +735,39 @@
 			Reveal.initialize({
 				history: true,
 				transition: 'linear',
+
+				chart: {
+					defaults: { 
+						global: { 
+							title: { fontColor: "#FFF" }, 
+							legend: {
+								position: "bottom",
+								labels: { fontColor: "#FFF" },
+							},
+							tooltips: {
+								labels: { fontColor: "#FFF" },
+							},
+						},
+						scale: { 
+							scaleLabel: { fontColor: "#FFF" }, 
+							gridLines: { color: "#FFF", zeroLineColor: "#FFF" }, 
+							ticks: { fontColor: "#FFF" }, 
+						} 
+					},
+					line: { 
+						borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], 
+						borderDash: [ [5,10], [0,0] ] 
+					}, 
+					bar: { 
+						backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]
+					},
+					pie: { 
+						backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]
+					},
+					radar: { 
+						borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]
+					}, 
+				},
 
 				math: {
 					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
@@ -403,7 +787,10 @@
 					},
 
 					{ src: 'lib/js/classList.js' },
-					{ src: 'plugin/math/math.js', async: true }
+					{ src: 'plugin/math/math.js', async: true },
+
+					{ src: 'plugin/chart/Chart.min.js' },				
+					{ src: 'plugin/chart/csv2chart.js' },
 				]
 			});
 		</script>
