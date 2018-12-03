@@ -25,10 +25,40 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2>Matemática IV</h2>
+					<h4>Aplicaciones de la matemática en informática</h4>
+					<p>Ejemplos del Mundo Real</p>
+				</section>
+				<section style="text-align: left; top: 193px; display: block;">
+					<h4>Fundamentos detrás del Reconocimiento de Voz utilizando Machine Learning</h4>
 				</section>
 				<section>
-					<h3>Aplicaciones de los contenidos de la materia</h3>
+					<section>
+						<h3>Presentación</h3>
+					</section>
+					<section style="text-align: right; top: 193px; display: block;">
+						Ulises Jeremias Cornejo Fandos
+						<br>
+						Licenciatura en Informática
+						<br>
+						4to Año
+					</section>
+					<section>
+						<h3>Motivación</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<img src="images/pipeline.png" height="400px" style="border: none;" alt="">
+					</section>
+				</section>
+				<section>
+					Veamos primero cómo se analiza un audio.
+
+					<p class="fragment">
+						Para esto vamos a ver un concepto importante
+						que nos va a permitir entender un poco más
+						lo que significa un audio en términos de análisis de datos.
+					</p>
 				</section>
 				<section>
 					<section>
@@ -63,7 +93,6 @@
 				<section>
 					<section>
 						<h3>Conceptos Necesarios</h3>
-						<h6>Repaso</h6>
 					</section>
 					<section>
 						<p>Un número complejo es un número de la forma $ a + bi $ donde:</p>
@@ -95,8 +124,8 @@
 					</section>
 					<section>
 						<p>
-							Geometricamente, los números complejos extienden el concepto
-							de linea numérica unidimensional a <strong>plano complejo bidimensional</strong>.
+							Geométricamente, los números complejos extienden el concepto
+							de línea numérica unidimensional a <strong>plano complejo bidimensional</strong>.
 						</p>
 					</section>
 					<section>
@@ -123,14 +152,12 @@
 					</section>
 					<section>
 						<p>
-							Los números complejos forman un <strong><em>Cuerpo</em></strong>,
-							por lo que dos números complejos $a$ y $b$ pueden sumarse y
-							multiplicarse.
+							Los números complejos pueden sumarse y multiplicarse.
 						</p>
 					</section>
 					<section>
-						Geometricamente hablando, los números complejos se suman como
-						<em>vectores euclideos</em>. La multiplicación de dos números complejos
+						Geométricamente hablando, los números complejos se suman coordenada
+						a coordenada. La multiplicación de dos números complejos
 						se puede expresar más fácilmente en coordenadas polares:
 					</section>
 					<section>
@@ -191,8 +218,7 @@
 					</section>
 					<section>
 						En un caso ideal, la posición en el eje real se comporta como
-						una función <em>coseno</em>, y sabemos de Matemática II que la razón de cambio
-						de la función está dada por la función <em>seno</em>.
+						una función <em>coseno</em>.
 					</section>
 					<section>
 						Pero, <strong>¿a qué llamamos caso ideal?</strong>
@@ -210,9 +236,9 @@
 					</section>
 					<section>
 						Para esto buscamos la forma de atenuar la función coseno que ya tenemos
-						e indicar cual será la amplitud inicial de la misma.
+						e indicar cuál será la amplitud inicial de la misma.
 					</section>
-					<section>
+					<section style="text-align: left; top: 193px; display: block;">
 						<h3>Amplitud</h3>
 						<p>
 							Para definir la amplitud inicial de la función <em>coseno</em> simplemente
@@ -220,7 +246,7 @@
 							signifique la amplitud inicial del resorte, $A$.
 						</p>
 					</section>
-					<section>
+					<section style="text-align: left; top: 193px; display: block;">
 						<h3>Periodo</h3>
 						<p>
 							Sabemos que la función $cos$ recibe la variable $t$ como argumento
@@ -229,17 +255,17 @@
 							un valor real $\omega$.
 						</p>
 					</section>
-					<section>
+					<section style="text-align: left; top: 193px; display: block;">
 						<h3>Fase</h3>
 						<p>
-							Finalmente, determinamos cuan corrido está el dibujo de la función
+							Finalmente, determinamos cuán corrido está el dibujo de la función
 							<em>coseno</em> en base a la fase $\phi$.
 						</p>
 					</section>
 					<section>
 						Se puede ver como los conceptos mencionados anteriormente
-						afectan a la gráfica de una función $sin$ en el siguiente
-						<a href="https://www.geogebra.org/m/KfUX66de" target="_blank">
+						afectan a la gráfica de una función $coseno$ y $seno$ en el siguiente
+						<a href="https://www.geogebra.org/m/AUbsEpGa" target="_blank">
 							enlace
 						</a>.
 					</section>
@@ -259,7 +285,7 @@
 							Particularmente, si tomamos la amplitud $A$ como la distancia de la caja al centro del plano
 							es decir, el módulo de la posición, y sea $\theta = \omega t + \phi$,
 							el argumento de la posición a lo largo del tiempo, tenemos la
-							posición en forma trinométrica,
+							posición en forma trigonométrica,
 						</p>
 
 						<p>
@@ -268,33 +294,14 @@
 							\]
 						</p>
 					</section>
-					<section>
-						<p>
-							Sabemos a su vez que, si derivamos $x(t)$ ó $y(t)$ respecto de $t$,
-							obtenemos la velocidad a la que se mueve el objeto,
-							quedando la siguiente función de velocidad para cada uno respectivamente:
-						</p>
-						<ul>
-							<li>$v_{x}(t) = -A \omega sin(\omega t + \phi)$</li>
-							<li>$v_{y}(t) = A \omega cos(\omega t + \phi)$</li>
-						</ul>
-					</section>
 				</section>
 				<section>
 					<section>
 						<h3>Análisis de Frecuencias</h3>
 					</section>
 					<section>
-						Respecto de este area de aplicaciones vamos a enfocarnos en dos
+						Respecto de este área de aplicaciones vamos a enfocarnos en dos
 						casos de aplicación.
-					</section>
-					<section>
-						A diferencia del ejemplo anterior, no disponemos de los conceptos
-						necesarios para terminar de comprender los fundamentos detras de estos
-						temas...
-					</section>
-					<section>
-						...pero se espera ir profundizando a medida que transcurre la materia.
 					</section>
 					<section>
 						El código de los ejemplos que se plantean a continuación se puede
@@ -310,7 +317,7 @@
 					</section>
 				</section>
 				<section>
-					<section>
+					<section data-background="images/terrain-gen-view.jpeg" data-background-transition="zoom">
 						<h3>Generación de Terrenos</h3>
 					</section>
 					<section>
@@ -325,12 +332,12 @@
 					</section>
 				</section>
 				<section>
-					<section>
-						<h3>Análisis de audios</h3>
+					<section data-background="images/audio_analysis.jpg" data-background-transition="zoom">
+						<h3>Análisis de audio</h3>
 					</section>
 					<section>
 						En el repositorio de Análisis de Frecuencias se puede ver un proyecto
-						en python, el cual permite observar como se representa graficamente
+						en python, el cual permite observar cómo se representa gráficamente
 						una onda de audio recibida por micrófono y se compara su gráfica
 						con el espectro de la misma.
 					</section>
@@ -340,43 +347,64 @@
 						herramientas del lenguaje <em>python</em>.
 					</section>
 					<section>
-						Además se muestra un curioso
+						<em>Análisis</em> se refiere a la acción de descomponer algo complejo en partes simples o 
+						identificar en ese algo complejo las partes más simples que lo forman. Un proceso que cuantifique 
+						las diversas intensidades de cada frecuencia se llama <strong>análisis espectral</strong>.
+					</section>
+					<section>
+						Matemáticamente el análisis espectral está relacionado con una herramienta llamada 
+						<strong>transformada de Fourier</strong> o <em>análisis de Fourier</em>.
+					</section>
+					<section>
+						<p>
+							Dada una señal o fenómeno ondultorio de amplitud $ s(t) $ esta se pude escribir matemáticamente 
+							como la siguiente combinación lineal generalizada:
+						</p>
+
+						\[
+							s(t) = \int_{\mathbf{R}} A(v)e^{-2 \pi ivt} d \omega
+						\]
+					</section>
+					<section>
+						Es decir, la señal puede ser concebida como la transformada de Fourier de la amplitud 
+						$ A = A(v) $. Ese análisis puede llevarse a cabo para pequeños intervalos de tiempo, 
+						o menos frecuentemente para intervalos largos.
+					</section>
+					<section>
+						<img src="images/time-vs-frecuency-domain.jpg" alt="">
+					</section>
+					<section>
+						Además veamos un curioso
 						<a href="https://github.com/CFSworks/wavebird-reversing/blob/master/03_complex_signals_and_fourier/synthesize.py" target="_blank">
 							ejemplo
 						</a>
-						de como se utilizan	señales complejas y la Transformada de Fourier para generar
+						de cómo se utilizan	señales complejas y la Transformada de Fourier para generar
 						un archivo de audio a partir de una lista de números complejos
 						representados en forma polar.
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Links de interes</h2>
-						<ul>
-							<li>
-								<a href="https://github.com/ulises-jeremias/matematica-iv" target="_blank">
-									Repositorio de las clases
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/ulises-jeremias/frequency-analysis-with-FFT" target="_blank">
-									Frecuency Analysis with FFT
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/CFSworks/wavebird-reversing" target="_blank">
-									Reverse-engineering Nintendo's WaveBird wireless controller
-								</a>
-							</li>
-						</ul>
+						<h3>Resumen</h3>
+					</section>
+					<section>
+						Hasta ahora vimos como podemos utilizar los números complejos
+						y el concepto de frecuencia para la generación de terrenos y
+						el análisis de audio.
+					</section>
+					<section>
+						Pero el análisis de frecuencias no se queda ahí.
+					</section>
+					<section>
+						También podemos utilizar estos conceptos para...
+					</section>
+					<section data-background="images/meme.gif">
+						<h2>Reconocimiento de voz</h2>
 					</section>
 				</section>
 				<section>
-					<h2>Segunda Clase de Aplicaciones</h2>
-				</section>
-				<section>
-					<section>
-						<h3>Machine Learning</h3>
+					<section data-background="images/ml-view.png" data-background-transition="zoom">
+						<h2>Machine Learning</h2>
 					</section>
 					<section>
 						Subcampo de las ciencias de la computación y una rama de la inteligencia artificial, 
@@ -428,7 +456,7 @@
 						</ul>
 					</section>
 					<section>
-						Para entender como entran en juego las ramas mensionadas anteriormente veamos
+						Para entender cómo entran en juego las ramas mencionadas anteriormente veamos
 						un ejemplo simple a continuación.
 					</section>
 					<section>
@@ -478,7 +506,7 @@
 					</section>
 					<section>
 						Tiene que existir alguna correlación entre ambos y, en caso de existir,
-						podemos crear un modelo predictivo que nos permita aprender cual es esa correlación
+						podemos crear un modelo predictivo que nos permita aprender cuál es esa correlación
 						para utilizarla en el futuro.
 					</section>
 					<section>
@@ -507,7 +535,7 @@
 						pequeña a partir de la cual se pueda inferir ciertos parámetros significativos para la predicción.
 					</section>
 					<section>
-						Teniendo en cuenta que queremos hallar una linea, nosotros vamos a utilizar
+						Teniendo en cuenta que queremos hallar una línea, nosotros vamos a utilizar
 						una herramienta estadística llamada,
 						<h3 class="fragment fade-up">Regresión Lineal</h3>
 					</section>
@@ -528,6 +556,9 @@
 						conocer el error de nuestra predicción. Necesitamos una función
 						de error la cual podamos optimizar para que sea mínima, e.g.,
 						<h3 class="fragment fade-up">Error Cuadrático Medio</h3>
+					</section>
+					<section>
+						<img src="images/r_squared.png" alt="">
 					</section>
 					<section style="text-align: left; top: 193px; display: block;">
 						<h3>Definición</h3>
@@ -562,6 +593,7 @@
 						Algoritmo de optimización iterativo de primer orden para encontrar el mínimo 
 						de una función.
 						<h5 class="fragment fade-up">¡¡No confundir con Method of Steepest Descent!!</h5>
+						<img class="fragment" style="float: right; margin-top: -55px; margin-right: 155px; border: none;" src="images/mucho-muy-importante.png" width="520px" alt="">
 					</section>
 					<section>
 						Para encontrar el mínimo local de una función que utiliza el descenso de gradiente, 
@@ -592,11 +624,11 @@
 					<section style="text-align: left; top: 193px; display: block;">
 						<h3>Algebra Lineal</h3>
 						Es la rama de la matemática que estudia espacios multivariados,
-						las transformaciones lineales existentes entre ellos y como
-						pueden representarse estas cuestiones en terminos de matrices y espacios vectoriales.
+						las transformaciones lineales existentes entre ellos y cómo
+						pueden representarse estas cuestiones en términos de matrices y espacios vectoriales.
 					</section>
 					<section>
-						<h5>Pero, donde entra Probabilidad en todo esto?</h5>
+						<h5>Pero, dónde entra Probabilidad en todo esto?</h5>
 
 						<h3 class="fragment fade-up">Logistic Regression</h3>
 					</section>
@@ -624,7 +656,7 @@
 						<img src="images/gradient_descent_example.gif" alt="">
 					</section>
 					<section>
-						Todo problema de Machine Learning se pienza en terminos de la <span class="fragment highlight-red">optimización</span>,
+						Todo problema de Machine Learning se piensa en términos de la <span class="fragment highlight-red">optimización</span>,
 						en donde vamos a tener una <span class="fragment highlight-blue">función de pérdida</span> que queremos <span class="fragment highlight-red">minimizar</span>
 						a través del tiempo y, en este caso específico, utilizamos Gradient Descent
 						como la técnica que nos va a permitir esto.
@@ -707,6 +739,7 @@
 						<h3>Ver Ejemplo</h3>
 					</section>
 				</section>
+
 				<section>
 					<section data-background="images/tensor-flow.jpeg"></section>
 					<section>
@@ -720,6 +753,200 @@
 					</section>
 					<section>
 						<h3>Ver Ejemplo</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Resumen</h3>
+					</section>
+					<section>
+						<h5>Qué tenemos hasta ahora?</h5>
+						<ul>
+							<li>
+								Entendemos qué es un audio en términos de información.
+							</li>
+							<li class="fragment">
+								Tenemos herramientas que nos permiten realizar un análisis del audio y extraer información interesante.
+							</li>
+							<li class="fragment">
+								Conocemos cómo aprende una máquina en términos de optimización.
+							</li>
+							<li class="fragment">
+								Sabemos cómo suministrarle información a un modelo para permitirle aprender.
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Y ahora qué?</h3>
+					</section>
+					<section>
+						<img src="images/hello.png" style="border: none;" alt="">
+					</section>
+				</section>
+
+				<section data-background-transition="zoom" data-background="images/nn-view.jpeg">
+					<h3>Redes Neuronales</h3>
+				</section>
+				<section>
+					<section>
+						<h4>¿Cómo funciona el cerebro?</h4>
+						<img src="images/b_neuron.png" alt="">
+					</section>
+					<section>
+						<h4>¿Cómo funciona el cerebro?</h4>
+						<ul>
+							<li>
+								<strong>Neurona:</strong> Unidad computacional básica a nivel cerebral
+								<ul>
+									<li class="fragment">86.000 millones de neuronas</li>
+								</ul>
+							</li>
+							<li class="fragment">Conectadas a través de <strong>sinapsis</strong>: \[ 10^{14} – 10^{15} \]</li>
+							<li class="fragment">Reciben señales de entrada desde las <strong>dendritas</strong></li>
+							<li class="fragment">Producen señales de salida a través del <strong>axón</strong>
+								<ul>
+									<li class="fragment">Interactúa con dendritas de otras neuronas a través de <strong>pesos sinápticos</strong></li>
+									<li class="fragment"><strong>Aprendizaje</strong>: Adaptación de pesos</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<img src="images/dog.jpg" style="border: none;" alt="">
+					</section>
+					<section>
+						<h3>Redes Neuronales Artificiales</h3>
+						<img src="images/neuron.png" alt="">
+					</section>
+					<section>
+						<h3>Conjuntos de sumas con pesos</h3>
+						<img src="images/network.png" alt="">
+					</section>
+					<section>
+						<p>Cada <strong>sinapsis</strong> posee un <strong>peso</strong> utilizado para la <strong>activación</strong> de la neurona.</p>
+						<img src="images/dnn.png" alt="">
+					</section>
+					<section>
+						<p>Partiendo de este concepto básico aparecen distintos tipos de NN.</p>
+						<ul>
+							<li class="fragment">Redes Neuronales Profundas - DNN</li>
+							<li class="fragment">Redes Neuronales de Convolución - CNN</li>
+							<li class="fragment">etc</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Redes Neuronales Profundas</h4>
+						<p>Deep Learning</p>
+					</section>
+					<section>
+						<h3>Redes Neuronales LSTM</h3>
+						<p>Redes Neuronales Recurrentes</p>
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Redes Neuronales Recurrentes</h3>
+
+						Una <strong>red neuronal recurrente</strong>,  <em>RNN</em>, es una clase de red neuronal artificial 
+						donde las conexiones entre los nodos forman un gráfico dirigido a lo largo de una secuencia. 
+						Esto le permite exhibir un comportamiento dinámico temporal para una secuencia de tiempo. 
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						A diferencia de las redes neuronales de alimentación directa, los RNN pueden usar su estado 
+						interno <em>(memoria)</em> para procesar secuencias de entradas. Esto los hace aplicables 
+						a tareas como el reconocimiento de escritura manuscrita no segmentada o el <strong>reconocimiento de voz</strong>.
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						<h3>Long short-term memory</h3>
+
+						Las unidades de <strong>memoria a largo plazo</strong>, <em>(LSTM)</em>, son unidades de una RNN. Un RNN compuesto de unidades 
+						LSTM a menudo se llama una <strong>red LSTM</strong>.
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						Una unidad LSTM común se compone de una celda, una puerta de entrada, 
+						una puerta de salida y una puerta olvidada. La celda recuerda valores en intervalos de tiempo arbitrarios 
+						y las tres puertas regulan el flujo de información que entra y sale de la celda.
+					</section>
+					<section style="text-align: left; top: 193px; display: block;">
+						Las redes LSTM están bien adaptadas para clasificar, procesar y hacer predicciones <span class="fragment highlight-red">basadas en datos de series de tiempo</span>, 
+						ya que puede haber retrasos de duración desconocida entre eventos importantes en una serie de tiempo. Los LSTM se desarrollaron 
+						para hacer frente a los problemas de gradiente de explosión y desaparición que se pueden encontrar al entrenar RNN tradicionales.
+					</section>
+
+					<section>
+						<pre><code class="python hljs" style="margin-left: -7.5%; width: 115%;" data-trim contenteditable>
+							import tensorflow as tf
+							import tflearn
+							
+							import speech_data
+							
+							learning_rate = 0.0001
+							training_iters = 300000 # steps
+							batch_size = 64
+							
+							width = 20  # mfcc features
+							height = 80  # (max) length of utterance
+							classes = 10  # digits
+							
+							batch = word_batch = speech_data.mfcc_batch_generator(batch_size)
+							
+							# Network building
+							net = tflearn.input_data([None, width, height])
+							net = tflearn.lstm(net, 128*4, dropout=0.5)
+							net = tflearn.fully_connected(net, classes, activation='softmax')
+							net = tflearn.regression(net, 
+										 optimizer='adam', 
+										 learning_rate=learning_rate, 
+										 loss='categorical_crossentropy')
+
+							model = tflearn.DNN(net, tensorboard_verbose=0)
+							
+							## add this "fix" for tensorflow version errors
+							for x in tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES): 
+								tf.add_to_collection(tf.GraphKeys.VARIABLES, x )
+							
+							# Training
+							
+							while --training_iters > 0:
+								trainX, trainY = next(batch)
+								testX, testY = next(batch)  # todo: proper ;)
+								model.fit(trainX, trainY, 
+									  n_epoch=10, 
+									  validation_set=(testX, testY), 
+									  show_metric=True, 
+									  batch_size=batch_size)
+							
+							model.save("tflearn.lstm.model")
+							_y = model.predict(next(batch)[0])  # <<= add your own voice here
+							print (_y)
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Links de interes</h2>
+						<ul>
+							<li>
+								<a href="https://github.com/ulises-jeremias/matematica-iv" target="_blank">
+									Repositorio de la charla
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/ulises-jeremias/frequency-analysis-with-FFT" target="_blank">
+									Frecuency Analysis with FFT
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/CFSworks/wavebird-reversing" target="_blank">
+									Reverse-engineering Nintendo's WaveBird wireless controller
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/pannous/tensorflow-speech-recognition" target="_blank">
+									Speech Recognition with TensorFlow
+								</a>
+							</li>
+						</ul>
 					</section>
 				</section>
 			</div>
